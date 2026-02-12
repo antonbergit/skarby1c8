@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommonModule uuid="9b2c4e5f-7d8a-41b2-9c3d-5e6f7a8b9c0d">
+		<Properties>
+			<Name>ОбработкаСпециальныхЦен</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка специальных цен</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обробка спеціальних цін</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Обработка и расчет специальных цен для пользователей</Comment>
+			<Global>true</Global>
+			<ClientManagedApplication>false</ClientManagedApplication>
+			<Server>true</Server>
+			<ExternalConnection>true</ExternalConnection>
+			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
+			<ServerCall>false</ServerCall>
+			<Privileged>false</Privileged>
+			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+		</Properties>
+		<ChildObjects>
+			<Method name="ПолучитьЦенуДляПользователя">
+				<Signature>
+					<v8:Signature>
+						<v8:Parameter>
+							<v8:Name>Номенклатура</v8:Name>
+							<v8:Type>
+								<v8:TypeSet>
+									<v8:Type>CatalogRef.Номенклатура</v8:Type>
+								</v8:TypeSet>
+							</v8:Type>
+							<v8:ByValue>true</v8:ByValue>
+						</v8:Parameter>
+						<v8:Parameter>
+							<v8:Name>Пользователь</v8:Name>
+							<v8:Type>
+								<v8:TypeSet>
+									<v8:Type>CatalogRef.Пользователи</v8:Type>
+								</v8:TypeSet>
+							</v8:Type>
+							<v8:ByValue>true</v8:ByValue>
+						</v8:Parameter>
+						<v8:ReturnType>
+							<v8:Type>Number</v8:Type>
+						</v8:ReturnType>
+					</v8:Signature>
+				</Signature>
+				<Comment>Получает цену товара для конкретного пользователя с учетом его категории специальных цен</Comment>
+			</Method>
+			<Method name="ПолучитьБазовуюЦену">
+				<Signature>
+					<v8:Signature>
+						<v8:Parameter>
+							<v8:Name>Номенклатура</v8:Name>
+							<v8:Type>
+								<v8:TypeSet>
+									<v8:Type>CatalogRef.Номенклатура</v8:Type>
+								</v8:TypeSet>
+							</v8:Type>
+							<v8:ByValue>true</v8:ByValue>
+						</v8:Parameter>
+						<v8:Parameter>
+							<v8:Name>ВидЦены</v8:Name>
+							<v8:Type>
+								<v8:TypeSet>
+									<v8:Type>CatalogRef.ВидыЦен</v8:Type>
+								</v8:TypeSet>
+							</v8:Type>
+							<v8:ByValue>true</v8:ByValue>
+						</v8:Parameter>
+						<v8:ReturnType>
+							<v8:Type>Number</v8:Type>
+						</v8:ReturnType>
+					</v8:Signature>
+				</Signature>
+				<Comment>Получает базовую цену товара из справочника цен</Comment>
+			</Method>
+			<Method name="ПроверитьБлокировкуИзменениявидаЦен">
+				<Signature>
+					<v8:Signature>
+						<v8:Parameter>
+							<v8:Name>Пользователь</v8:Name>
+							<v8:Type>
+								<v8:TypeSet>
+									<v8:Type>CatalogRef.Пользователи</v8:Type>
+								</v8:TypeSet>
+							</v8:Type>
+							<v8:ByValue>true</v8:ByValue>
+						</v8:Parameter>
+						<v8:ReturnType>
+							<v8:Type>Boolean</v8:Type>
+						</v8:ReturnType>
+					</v8:Signature>
+				</Signature>
+				<Comment>Проверяет, заблокирована ли возможность изменения вида цен для пользователя</Comment>
+			</Method>
+		</ChildObjects>
+	</CommonModule>
+</MetaDataObject>
