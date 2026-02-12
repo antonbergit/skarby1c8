@@ -1,0 +1,4312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияОтступ1" id="33">
+			<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ДекорацияОтступ1ExtendedTooltip" id="407"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаДекорацииОписанияЕдиныйНалог" id="64">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияЕдиныйНалогExtendedTooltip" id="408"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты1" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты1ExtendedTooltip" id="410"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания6" id="68">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания6ExtendedTooltip" id="411"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок5" id="69">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок5КонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ДекорацияКружок5ExtendedTooltip" id="412"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание4" id="71">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рассчитывается и уплачивается один раз в год в местную налоговую до 30 апреля.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Розраховується й сплачується один раз у рік у місцеву податкову до 30 квітня.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание4КонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание4ExtendedTooltip" id="413"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания7" id="73">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания7ExtendedTooltip" id="414"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок6" id="74">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок6КонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ДекорацияКружок6ExtendedTooltip" id="415"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание5" id="124">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма налога – это 6% от доходов, либо 15% от доходов за вычетом расходов,
+но не менее 1% от доходов.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума податку – це 6% від доходів, або 15% від доходів за винятком витрат,
+але не менш 1% від доходів.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание5КонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание5ExtendedTooltip" id="416"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗаполнения" id="369">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заполнения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заповнення</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаполненияExtendedTooltip" id="417"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДекорацииОписания8" id="82">
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДекорацииОписания8ExtendedTooltip" id="418"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияКружок7" id="83">
+											<Width>1</Width>
+											<Height>1</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>web:FireBrick</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияКружок7КонтекстноеМеню" id="84"/>
+											<ExtendedTooltip name="ДекорацияКружок7ExtendedTooltip" id="419"/>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияПереходКПапкамДокументовИзЕН" id="85">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+											<VerticalStretch>false</VerticalStretch>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сначала заполните документы или &lt;link КУДИР&gt;внесите&lt;/&gt; записи Книги учета доходов и расходов.
+Затем рассчитывайте.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Спочатку заповніть документи або внесіть записи Книги обліку доходів і витрат. Потім розраховуйте.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияПереходКПапкамДокументовИзЕНКонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="ДекорацияПереходКПапкамДокументовИзЕНExtendedTooltip" id="420"/>
+											<Events>
+												<Event name="URLProcessing">ДекорацияПереходКПапкамДокументовИзЕНОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания9" id="89">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания9ExtendedTooltip" id="427"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок8" id="90">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок8КонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ДекорацияКружок8ExtendedTooltip" id="428"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовЕН" id="92">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовЕНКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовЕНExtendedTooltip" id="429"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияАвансовыйПлатежПоУСН" id="132">
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияАвансовыйПлатежПоУСНExtendedTooltip" id="430"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты3" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты3ExtendedTooltip" id="432"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания15" id="136">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания15ExtendedTooltip" id="433"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок14" id="137">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок14КонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ДекорацияКружок14ExtendedTooltip" id="434"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание10" id="139">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рассчитывается и уплачивается один раз в квартал до 25-го числа месяца, следующего за отчетным.
+Рассчитывается три раза в год (за I квартал, полугодие и 9 месяцев)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Розраховується й сплачується один раз у квартал до 25-го числа місяця, що випливає за звітним.
+Розраховується три рази в рік (за I квартал, півріччя й 9 місяців)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание10КонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание10ExtendedTooltip" id="435"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания16" id="141">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания16ExtendedTooltip" id="436"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок15" id="142">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок15КонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ДекорацияКружок15ExtendedTooltip" id="437"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание11" id="144">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма авансового платежа – это 6% от доходов, либо 15% от доходов за вычетом расходов,
+но не менее 1% от доходов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума авансового платежу – це 6% від доходів, або 15% від доходів за винятком витрат,
+але не менш 1% від доходів</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание11КонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание11ExtendedTooltip" id="438"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗаполнения2" id="375">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаполнения2ExtendedTooltip" id="439"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДекорацииОписания17" id="146">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДекорацииОписания17ExtendedTooltip" id="440"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияКружок16" id="147">
+											<Height>2</Height>
+											<TextColor>web:FireBrick</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ДекорацияКружок16КонтекстноеМеню" id="148"/>
+											<ExtendedTooltip name="ДекорацияКружок16ExtendedTooltip" id="441"/>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияПереходКПапкамДокументовИзАвПлатежа" id="635">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сначала заполните документы или &lt;link КУДИР&gt;внесите&lt;/&gt; записи Книги учета доходов и расходов.
+Затем рассчитывайте.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Спочатку заповніть документи або внесіть записи Книги обліку доходів і витрат. Потім розраховуйте.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияПереходКПапкамДокументовИзАвПлатежаКонтекстноеМеню" id="636"/>
+											<ExtendedTooltip name="ДекорацияПереходКПапкамДокументовИзАвПлатежаРасширеннаяПодсказка" id="637"/>
+											<Events>
+												<Event name="URLProcessing">ДекорацияПереходКПапкамДокументовИзАвПлатежаОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания18" id="153">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания18ExtendedTooltip" id="449"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок17" id="154">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок17КонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ДекорацияКружок17ExtendedTooltip" id="450"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовАвПлатежа" id="156">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовАвПлатежаКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовАвПлатежаExtendedTooltip" id="451"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияДекларацииУСН" id="1">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияДекларацииУСНExtendedTooltip" id="452"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТекстыExtendedTooltip" id="454"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания2" id="5">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания2ExtendedTooltip" id="455"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок1" id="6">
+									<Width>1</Width>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок1КонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ДекорацияКружок1ExtendedTooltip" id="456"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание1" id="8">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Height>1</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируется раз в год и отправляется в налоговую по месту регистрации до 30 апреля</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формується раз у рік і відправляється в податкову по місцю реєстрації до 30 квітня</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание1КонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание1ExtendedTooltip" id="457"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания14" id="126">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания14ExtendedTooltip" id="458"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок13" id="127">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок13КонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ДекорацияКружок13ExtendedTooltip" id="459"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание7" id="129">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед отправкой Декларации необходимо подать в налоговую Книгу учета доходов и расходов
+за соответствующий период</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Перед відправленням Декларації необхідно подати в податкову Книгу обліку доходів і витрат
+за відповідний період</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание7КонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание7ExtendedTooltip" id="460"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗаполнения3" id="385">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заполнения3</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заповнення3</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаполнения3ExtendedTooltip" id="466"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДекорацииОписания4" id="19">
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДекорацииОписания4ExtendedTooltip" id="467"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияКружок3" id="20">
+											<Width>1</Width>
+											<Height>1</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>web:FireBrick</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияКружок3КонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ДекорацияКружок3ExtendedTooltip" id="468"/>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияПереходКПапкамДокументовИзДекларацияУСН" id="638">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+											<VerticalStretch>false</VerticalStretch>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сначала заполните документы или &lt;link КУДИР&gt;внесите&lt;/&gt; записи Книги учета доходов и расходов.
+Затем рассчитывайте.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Спочатку заповніть документи або внесіть записи Книги обліку доходів і витрат. Потім розраховуйте.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияПереходКПапкамДокументовИзДекларацияУСНКонтекстноеМеню" id="639"/>
+											<ExtendedTooltip name="ДекорацияПереходКПапкамДокументовИзДекларацияУСНРасширеннаяПодсказка" id="640"/>
+											<Events>
+												<Event name="URLProcessing">ДекорацияПереходКПапкамДокументовИзДекларацияУСНОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания5" id="37">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания5ExtendedTooltip" id="476"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок4" id="38">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок4КонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ДекорацияКружок4ExtendedTooltip" id="477"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовДекларацияУСН" id="40">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовДекларацияУСНКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовДекларацияУСНExtendedTooltip" id="478"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияКУДиР" id="94">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияКУДиРExtendedTooltip" id="479"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты2" id="97">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты2ExtendedTooltip" id="481"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания10" id="98">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания10ExtendedTooltip" id="482"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок9" id="99">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок9КонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ДекорацияКружок9ExtendedTooltip" id="483"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание9" id="101">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оформляется раз в год и предоставляется в налоговую для заверения до 30 апреля</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Оформляється раз у рік і надається в податкову для завірення до 30 квітня</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание9КонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание9ExtendedTooltip" id="484"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания11" id="103">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания11ExtendedTooltip" id="485"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок10" id="104">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок10КонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ДекорацияКружок10ExtendedTooltip" id="486"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация13" id="108">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Необходимо подавать до отправки Декларации по УСН</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Необхідно подавати до відправлення Декларації по ССО</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="Декорация13КонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="Декорация13ExtendedTooltip" id="487"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗаполнения4" id="395">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаполнения4ExtendedTooltip" id="488"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДекорацииОписания12" id="112">
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДекорацииОписания12ExtendedTooltip" id="489"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияКружок11" id="113">
+											<Width>1</Width>
+											<Height>1</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>web:FireBrick</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>!</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияКружок11КонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="ДекорацияКружок11ExtendedTooltip" id="490"/>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияПереходКПапкамДокументовИзКУДИР" id="641">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+											<VerticalStretch>false</VerticalStretch>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сначала &lt;link ПапкиДокументов&gt;заполните&lt;/&gt; документы или &lt;link КУДИР&gt;внесите&lt;/&gt; записи Книги учета доходов и расходов.
+Затем рассчитывайте.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Спочатку заповніть документи або внесіть записи Книги обліку доходів і витрат. Потім розраховуйте.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="ДекорацияПереходКПапкамДокументовИзКУДИРКонтекстноеМеню" id="642"/>
+											<ExtendedTooltip name="ДекорацияПереходКПапкамДокументовИзКУДИРРасширеннаяПодсказка" id="643"/>
+											<Events>
+												<Event name="URLProcessing">ДекорацияПереходКПапкамДокументовИзКУДИРОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания13" id="119">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания13ExtendedTooltip" id="498"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок12" id="120">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок12КонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ДекорацияКружок12ExtendedTooltip" id="499"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовКУДиР" id="122">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовКУДиРКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовКУДиРExtendedTooltip" id="500"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияФССиПФР" id="162">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания ФССи ПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису ФССи ПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияФССиПФРExtendedTooltip" id="501"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты4" id="165">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты4ExtendedTooltip" id="503"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания19" id="166">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания19ExtendedTooltip" id="504"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок18" id="167">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок18КонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="ДекорацияКружок18ExtendedTooltip" id="505"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание14" id="169">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Взносы в ПФР и ОМС являются обязательными. Уплачиваются до 31 декабря. Можно платить
+каждый квартал, можно раз в год. Если решите раз в год, то квартальные задачи можете
+просто переносить в архив без выполнения.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Внески в ПФР і ОМС є обов`язковими. Сплачуються до 31 грудня. Можна платити
+кожний квартал, можна раз у рік. Якщо вирішите раз у рік, то квартальні завдання можете
+просто переносити в архів без виконання.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание14КонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание14ExtendedTooltip" id="506"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания20" id="171">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания20ExtendedTooltip" id="507"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок19" id="172">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок19КонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ДекорацияКружок19ExtendedTooltip" id="508"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация14" id="174">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма взносов - фиксированная. МРОТ х 12 месяцев х 26% в ПФР, 5.1% в ФФОМС.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума внесків - фіксована. МРОП х 12 місяців х 26% у ПФР, 5.1% у ФФОМС.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация14КонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="Декорация14ExtendedTooltip" id="509"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация15" id="405">
+									<Visible>false</Visible>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма взносов - фиксированная. МРОТ х 12 месяцев х 26% х 2 в ПФР, 5.1% в ФФОМС.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума внесків - фіксована. МРОП х 12 місяців х 26% х 2 у ПФР, 5.1% у ФФОМС.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация15КонтекстноеМеню" id="406"/>
+									<ExtendedTooltip name="Декорация15ExtendedTooltip" id="510"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания24" id="193">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания24ExtendedTooltip" id="511"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок23" id="194">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок23КонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="ДекорацияКружок23ExtendedTooltip" id="512"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация16" id="196">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма в ПФР может делиться на страховую и накопительную части в зависимости от года рождения. </v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума в ПФР може ділитися на страхову й накопичувальну частини залежно від року народження.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация16КонтекстноеМеню" id="197"/>
+									<ExtendedTooltip name="Декорация16ExtendedTooltip" id="513"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияДекларацииЕНВД" id="198">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияДекларацииЕНВДExtendedTooltip" id="521"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты5" id="201">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты5ExtendedTooltip" id="523"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания23" id="202">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания23ExtendedTooltip" id="524"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок22" id="203">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок22КонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="ДекорацияКружок22ExtendedTooltip" id="525"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание16" id="205">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируется раз в три месяца и подается до 20 числа после окончания квартала</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формується раз у три місяці й подається до 20 числа після закінчення кварталу</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание16КонтекстноеМеню" id="206"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание16ExtendedTooltip" id="526"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания27" id="221">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания27ExtendedTooltip" id="527"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок26" id="222">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок26КонтекстноеМеню" id="223"/>
+									<ExtendedTooltip name="ДекорацияКружок26ExtendedTooltip" id="528"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание20" id="647">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;link ЕНВД&gt;Заполните&lt;/&gt; сведения по ЕНВД за %1
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заповніть відомості по ЄП за %1</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание20КонтекстноеМеню" id="648"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание20РасширеннаяПодсказка" id="649"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание20ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания28" id="228">
+							<Visible>false</Visible>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания28ExtendedTooltip" id="531"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок27" id="229">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок27КонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="ДекорацияКружок27ExtendedTooltip" id="532"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияЕНВДНалог" id="231">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияЕНВДНалогExtendedTooltip" id="533"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты6" id="234">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты6ExtendedTooltip" id="535"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания25" id="235">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания25ExtendedTooltip" id="536"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок24" id="236">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок24КонтекстноеМеню" id="237"/>
+									<ExtendedTooltip name="ДекорацияКружок24ExtendedTooltip" id="537"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание17" id="238">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уплачивается раз в три месяца до 25 числа после окончания квартала</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сплачується раз у три місяці до 25 числа після закінчення кварталу</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание17КонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание17ExtendedTooltip" id="538"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания29" id="240">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания29ExtendedTooltip" id="539"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок28" id="241">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок28КонтекстноеМеню" id="242"/>
+									<ExtendedTooltip name="ДекорацияКружок28ExtendedTooltip" id="540"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписаниеЕНВДНалог" id="644">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;link ЕНВД&gt;Заполните&lt;/&gt; сведения по ЕНВД за %1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заповніть відомості по ЄП за %1</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписаниеЕНВДНалогКонтекстноеМеню" id="645"/>
+									<ExtendedTooltip name="ДекорацияТекстОписаниеЕНВДНалогРасширеннаяПодсказка" id="646"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписаниеЕНВДНалог2ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания30" id="247">
+							<Visible>false</Visible>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания30ExtendedTooltip" id="543"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок29" id="248">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок29КонтекстноеМеню" id="249"/>
+									<ExtendedTooltip name="ДекорацияКружок29ExtendedTooltip" id="544"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияСреднесписочнойЧисленности" id="250">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания среднесписочной численности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису середньоспискової чисельності</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияСреднесписочнойЧисленностиExtendedTooltip" id="545"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты7" id="253">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты7ExtendedTooltip" id="547"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания26" id="254">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания26ExtendedTooltip" id="548"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок25" id="255">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок25КонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="ДекорацияКружок25ExtendedTooltip" id="549"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание18" id="257">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сведения о среднесписочной численности  работников за предшествующий год представляются
+в ИФНС до 20 января текущего года.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Відомості про середньооблікову чисельність  працівників за попередній рік представляються
+в ІФПС до 20 січня поточного року.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание18КонтекстноеМеню" id="258"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание18ExtendedTooltip" id="550"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания31" id="259">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания31ExtendedTooltip" id="551"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок30" id="260">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок30КонтекстноеМеню" id="261"/>
+									<ExtendedTooltip name="ДекорацияКружок30ExtendedTooltip" id="552"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание21" id="264">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;link СведенияПоСотрудникам&gt;Проверьте&lt;/&gt; сначала сведения по сотрудникам, затем формируйте отчет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Перевірте спочатку відомості по співробітниках, потім формуйте звіт</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание21КонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание21ExtendedTooltip" id="554"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание21ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания32" id="266">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания32ExtendedTooltip" id="555"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок31" id="267">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок31КонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="ДекорацияКружок31ExtendedTooltip" id="556"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовСреднесписочнаяЧисленность" id="269">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если периоды работы сотрудников за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо періоди роботи співробітників за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовСреднесписочнаяЧисленностьКонтекстноеМеню" id="270"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовСреднесписочнаяЧисленностьExtendedTooltip" id="557"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияСправки2НДФЛ" id="271">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияСправки2НДФЛExtendedTooltip" id="558"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты8" id="274">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты8ExtendedTooltip" id="560"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания33" id="275">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания33ExtendedTooltip" id="561"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок32" id="276">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок32КонтекстноеМеню" id="277"/>
+									<ExtendedTooltip name="ДекорацияКружок32ExtendedTooltip" id="562"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание19" id="278">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируется раз в год и отправляется в налоговую по месту регистрации до 1 апреля</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формується раз у рік і відправляється в податкову по місцю реєстрації до 1 квітня</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание19КонтекстноеМеню" id="279"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание19ExtendedTooltip" id="563"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания34" id="280">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания34ExtendedTooltip" id="564"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок33" id="281">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок33КонтекстноеМеню" id="282"/>
+									<ExtendedTooltip name="ДекорацияКружок33ExtendedTooltip" id="565"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание22" id="285">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения&lt;/&gt;&lt;link СведенияПоСотрудникам&gt; &lt;/&gt;и &lt;link НачисленияПоСотрудникам&gt;начисления &lt;/&gt;по сотрудникам, затем формируйте справки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Спочатку  заповніть відомості й нарахування по співробітниках, потім формуйте довідки</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание22КонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание22ExtendedTooltip" id="567"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание22ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания35" id="287">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания35ExtendedTooltip" id="568"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок34" id="288">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок34КонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="ДекорацияКружок34ExtendedTooltip" id="569"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументов2НДФЛ" id="290">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументов2НДФЛКонтекстноеМеню" id="291"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументов2НДФЛExtendedTooltip" id="570"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияОтчетностьВПФР" id="292">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания отчетность ВПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису звітність ВПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияОтчетностьВПФРExtendedTooltip" id="571"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты9" id="295">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты9ExtendedTooltip" id="573"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания36" id="296">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания36ExtendedTooltip" id="574"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок35" id="297">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок35КонтекстноеМеню" id="298"/>
+									<ExtendedTooltip name="ДекорацияКружок35ExtendedTooltip" id="575"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание23" id="299">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполняется и предоставляется один раз в квартал, не позднее 15-го числа второго 
+календарного месяца, следующего за отчетным.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заповнюється й надається один раз у квартал, не пізніше 15-го числа другого 
+календарного місяця, що випливає за звітним.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание23КонтекстноеМеню" id="300"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание23ExtendedTooltip" id="576"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания38" id="306">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания38ExtendedTooltip" id="577"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок37" id="307">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок37КонтекстноеМеню" id="308"/>
+									<ExtendedTooltip name="ДекорацияКружок37ExtendedTooltip" id="578"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание25" id="311">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения &lt;/&gt;и &lt;link НачисленияПоСотрудникам&gt;начисления &lt;/&gt;по сотрудникам, затем рассчитывайте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Спочатку  заповніть відомості й нарахування по співробітниках, потім розраховуйте</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание25КонтекстноеМеню" id="312"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание25ExtendedTooltip" id="580"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание25ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания39" id="313">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания39ExtendedTooltip" id="581"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок38" id="314">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок38КонтекстноеМеню" id="315"/>
+									<ExtendedTooltip name="ДекорацияКружок38ExtendedTooltip" id="582"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовРСВ" id="316">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовРСВКонтекстноеМеню" id="317"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовРСВExtendedTooltip" id="583"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияНалогиСотрудников" id="318">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияНалогиСотрудниковExtendedTooltip" id="584"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты10" id="321">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты10ExtendedTooltip" id="586"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания37" id="322">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания37ExtendedTooltip" id="587"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок36" id="323">
+									<Width>1</Width>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок36КонтекстноеМеню" id="324"/>
+									<ExtendedTooltip name="ДекорацияКружок36ExtendedTooltip" id="588"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание24" id="325">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рассчитываются и уплачиваются раз в месяц до момента выплата зарплаты, но не позднее 15-го числа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Розраховуються й сплачуються раз на місяць до моменту виплати зарплати, але не пізніше 15-го числа</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание24КонтекстноеМеню" id="326"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание24ExtendedTooltip" id="589"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания42" id="339">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания42ExtendedTooltip" id="590"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок41" id="340">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок41КонтекстноеМеню" id="341"/>
+									<ExtendedTooltip name="ДекорацияКружок41ExtendedTooltip" id="591"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание27" id="342">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Налоги и взносы за сотрудников состоят из НДФЛ, взносов в ПФР на страховые и накопительные
+части, ФСС за социальное страхование и травматизм</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Податки й внески за співробітників складаються із ПДФО, внесків у ПФР на страхові й накопичувальні
+частини, ФСС за соціальне страхування й травматизм</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание27КонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание27ExtendedTooltip" id="592"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания40" id="327">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания40ExtendedTooltip" id="593"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок39" id="328">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок39КонтекстноеМеню" id="329"/>
+									<ExtendedTooltip name="ДекорацияКружок39ExtendedTooltip" id="594"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание26" id="332">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения &lt;/&gt;и &lt;link НачисленияПоСотрудникам&gt;начисления &lt;/&gt;по сотрудникам, затем рассчитывайте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Спочатку  заповніть відомості й нарахування по співробітниках, потім розраховуйте</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание26КонтекстноеМеню" id="333"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание26ExtendedTooltip" id="596"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание26ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания41" id="334">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания41ExtendedTooltip" id="597"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок40" id="335">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок40КонтекстноеМеню" id="336"/>
+									<ExtendedTooltip name="ДекорацияКружок40ExtendedTooltip" id="598"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовНалоговСотрудников" id="337">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовНалоговСотрудниковКонтекстноеМеню" id="338"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовНалоговСотрудниковExtendedTooltip" id="599"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписания4ФСС" id="344">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания4 ФСС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису4 ФСС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания отчетность ВПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису звітність ВПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписания4ФССExtendedTooltip" id="600"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты11" id="347">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты11ExtendedTooltip" id="602"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания43" id="348">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания43ExtendedTooltip" id="603"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок42" id="349">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок42КонтекстноеМеню" id="350"/>
+									<ExtendedTooltip name="ДекорацияКружок42ExtendedTooltip" id="604"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание28" id="351">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполняется и подается один раз в квартал, не позднее 15-го числа месяца, следующего за отчетным.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заповнюється й подається один раз у квартал, не пізніше 15-го числа місяця, що випливає за звітним.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание28КонтекстноеМеню" id="352"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание28ExtendedTooltip" id="605"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания44" id="678">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания44РасширеннаяПодсказка" id="679"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок43" id="680">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок43КонтекстноеМеню" id="681"/>
+									<ExtendedTooltip name="ДекорацияКружок43РасширеннаяПодсказка" id="682"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание29" id="683">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения&lt;/&gt; и &lt;link НачисленияПоСотрудникам&gt;начисления&lt;/&gt; по сотрудникам, затем рассчитывайте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Спочатку  заповніть відомості й нарахування по співробітниках, потім розраховуйте</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание29КонтекстноеМеню" id="684"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание29РасширеннаяПодсказка" id="685"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание29ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания45" id="360">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания45ExtendedTooltip" id="610"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок44" id="361">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок44КонтекстноеМеню" id="362"/>
+									<ExtendedTooltip name="ДекорацияКружок44ExtendedTooltip" id="611"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументов4ФСС" id="363">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументов4ФССКонтекстноеМеню" id="364"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументов4ФССExtendedTooltip" id="612"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияВзносыСвыше300тр" id="650">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания взносы свыше300тр</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису внески понад300тг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания ФССи ПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису ФССи ПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияВзносыСвыше300трРасширеннаяПодсказка" id="651"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты12" id="652">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты12РасширеннаяПодсказка" id="653"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания46" id="654">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания46РасширеннаяПодсказка" id="655"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок45" id="656">
+									<Width>1</Width>
+									<Height>3</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок45КонтекстноеМеню" id="657"/>
+									<ExtendedTooltip name="ДекорацияКружок45РасширеннаяПодсказка" id="658"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание30" id="659">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные страховые взносы в ПФР уплачиваются в том случае, если доходы превысили
+300 тысяч рублей. Перед выполнением текущей задачи необходимо убедиться, что выполнены
+задачи по уплате налога УСН и\или ЕНВД (если используются) за период оплаты взносов.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Додаткові страхові внески в ПФР сплачуються в тому випадку, якщо доходи перевищили
+300 тисяч рублів. Перед виконанням поточного завдання необхідно переконатися, що виконані
+завдання по сплаті податку ССО і\або ЄП (якщо використовуються) за період оплати внесків.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание30КонтекстноеМеню" id="660"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание30РасширеннаяПодсказка" id="661"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания47" id="662">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания47РасширеннаяПодсказка" id="663"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок46" id="664">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок46КонтекстноеМеню" id="665"/>
+									<ExtendedTooltip name="ДекорацияКружок46РасширеннаяПодсказка" id="666"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация17" id="667">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма взносов составляет 1% от суммы доходов, превышающего 300 000 рублей.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума внесків становить 1% від суми доходів, що перевищує 300 000 гривень.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация17КонтекстноеМеню" id="668"/>
+									<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="669"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация18" id="670">
+									<Visible>false</Visible>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма взносов - фиксированная. МРОТ х 12 месяцев х 26% х 2 в ПФР, 5.1% в ФФОМС.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума внесків - фіксована. МРОП х 12 місяців х 26% х 2 у ПФР, 5.1% у ФФОМС.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация18КонтекстноеМеню" id="671"/>
+									<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="672"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияПатент" id="686">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания патент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации описания патент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания ФССи ПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису ФССи ПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияПатентРасширеннаяПодсказка" id="687"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты13" id="688">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты13РасширеннаяПодсказка" id="689"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания48" id="690">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания48РасширеннаяПодсказка" id="691"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок47" id="692">
+									<Width>1</Width>
+									<Height>3</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок47КонтекстноеМеню" id="693"/>
+									<ExtendedTooltip name="ДекорацияКружок47РасширеннаяПодсказка" id="694"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание31" id="695">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Патент оплачивается полностью не позднее срока окончания действия патента, 
+если срок действия патента меньше 6 месяцев.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Патент оплачивается полностью не позднее срока окончания действия патента, 
+если срок действия патента меньше 6 месяцев.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание31КонтекстноеМеню" id="696"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание31РасширеннаяПодсказка" id="697"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания49" id="698">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания49РасширеннаяПодсказка" id="699"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок48" id="700">
+									<Width>1</Width>
+									<Height>3</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок48КонтекстноеМеню" id="701"/>
+									<ExtendedTooltip name="ДекорацияКружок48РасширеннаяПодсказка" id="702"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация19" id="703">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если срок действия патента от 6 до 12 месяцев, то необходимо оплатить:
+- 1/3 суммы налога не позднее 90 календарных дней с начала действия патента;
+- 2/3 суммы налога не позднее срока окончания действия патента.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Если срок действия патента от 6 до 12 месяцев, то необходимо оплатить:
+- 1/3 суммы налога не позднее 90 календарных дней с начала действия патента;
+- 2/3 суммы налога не позднее срока окончания действия патента.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация19КонтекстноеМеню" id="704"/>
+									<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="705"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация20" id="706">
+									<Visible>false</Visible>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма взносов - фиксированная. МРОТ х 12 месяцев х 26% х 2 в ПФР, 5.1% в ФФОМС.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума внесків - фіксована. МРОП х 12 місяців х 26% х 2 у ПФР, 5.1% у ФФОМС.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="Декорация20КонтекстноеМеню" id="707"/>
+									<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="708"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияТорговыйСбор" id="709">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания торговый сбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации описания торговый сбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияТорговыйСборРасширеннаяПодсказка" id="710"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты14" id="711">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты14РасширеннаяПодсказка" id="712"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания50" id="713">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания50РасширеннаяПодсказка" id="714"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок49" id="715">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок49КонтекстноеМеню" id="716"/>
+									<ExtendedTooltip name="ДекорацияКружок49РасширеннаяПодсказка" id="717"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание32" id="718">
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уплачивается раз в три месяца до 25 числа после окончания квартала.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Уплачивается раз в три месяца до 25 числа после окончания квартала.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание32КонтекстноеМеню" id="719"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание32РасширеннаяПодсказка" id="720"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания51" id="721">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания51РасширеннаяПодсказка" id="722"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок50" id="723">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок50КонтекстноеМеню" id="724"/>
+									<ExtendedTooltip name="ДекорацияКружок50РасширеннаяПодсказка" id="725"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание33" id="726">
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уведомлять налоговую нужно в течение 5 дней со дня начала ведения деятельности в торговой точке. Поэтому у вас уже должны быть заполнены необходимые сведения.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Уведомлять налоговую нужно в течение 5 дней со дня начала ведения деятельности в торговой точке. Поэтому у вас уже должны быть заполнены необходимые сведения.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание33КонтекстноеМеню" id="727"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание33РасширеннаяПодсказка" id="728"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания52" id="729">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания52РасширеннаяПодсказка" id="730"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок51" id="731">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок51КонтекстноеМеню" id="732"/>
+									<ExtendedTooltip name="ДекорацияКружок51РасширеннаяПодсказка" id="733"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписаниеТорговыйСбор" id="734">
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;link ЕНВД&gt;Проверьте&lt;/&gt; сведения по торговым точкам,</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>&lt;link ЕНВД&gt;Проверьте&lt;/&gt; сведения по торговым точкам,</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписаниеТорговыйСборКонтекстноеМеню" id="735"/>
+									<ExtendedTooltip name="ДекорацияТекстОписаниеТорговыйСборРасширеннаяПодсказка" id="736"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписаниеТорговыйСборОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания53" id="737">
+							<Visible>false</Visible>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания53РасширеннаяПодсказка" id="738"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок52" id="739">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок52КонтекстноеМеню" id="740"/>
+									<ExtendedTooltip name="ДекорацияКружок52РасширеннаяПодсказка" id="741"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияФорма1Предприниматель" id="742">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания форма1 предприниматель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации описания форма1 предприниматель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания торговый сбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации описания торговый сбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияФорма1ПредпринимательРасширеннаяПодсказка" id="743"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты15" id="744">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты15РасширеннаяПодсказка" id="745"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания54" id="746">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания54РасширеннаяПодсказка" id="747"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок53" id="748">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок53КонтекстноеМеню" id="749"/>
+									<ExtendedTooltip name="ДекорацияКружок53РасширеннаяПодсказка" id="750"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание34" id="751">
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предоставляется в Росстат 1 раз.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Предоставляется в Росстат 1 раз.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание34КонтекстноеМеню" id="752"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание34РасширеннаяПодсказка" id="753"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания55" id="754">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания55РасширеннаяПодсказка" id="755"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок54" id="756">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок54КонтекстноеМеню" id="757"/>
+									<ExtendedTooltip name="ДекорацияКружок54РасширеннаяПодсказка" id="758"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание35" id="759">
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполняется и предоставляется до 1 апреля 2016 г.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заполняется и предоставляется до 1 апреля 2016 г.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание35КонтекстноеМеню" id="760"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание35РасширеннаяПодсказка" id="761"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания57" id="770">
+							<Visible>false</Visible>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания57РасширеннаяПодсказка" id="771"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок56" id="772">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок56КонтекстноеМеню" id="773"/>
+									<ExtendedTooltip name="ДекорацияКружок56РасширеннаяПодсказка" id="774"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияФорма6НДФЛ" id="775">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации форма 6-НДФЛ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации форма 6-НДФЛ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания отчетность ВПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису звітність ВПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияФорма6НДФЛРасширеннаяПодсказка" id="776"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты16" id="777">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты16РасширеннаяПодсказка" id="778"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания59" id="795">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания59РасширеннаяПодсказка" id="796"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок58" id="797">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок58КонтекстноеМеню" id="798"/>
+									<ExtendedTooltip name="ДекорацияКружок58РасширеннаяПодсказка" id="799"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание37" id="800">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируется раз в квартал и отправляется в налоговую по месту регистрации до конца месяца, следующего за отчетным</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формируется раз в квартал и отправляется в налоговую по месту регистрации до конца месяца, следующего за отчетным</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание37КонтекстноеМеню" id="801"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание37РасширеннаяПодсказка" id="802"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания56" id="779">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания56РасширеннаяПодсказка" id="780"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок55" id="781">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок55КонтекстноеМеню" id="782"/>
+									<ExtendedTooltip name="ДекорацияКружок55РасширеннаяПодсказка" id="783"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание36" id="784">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения&lt;/&gt; и &lt;link НачисленияПоСотрудникам&gt;начисления&lt;/&gt; по сотрудникам, затем рассчитывайте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Спочатку  заповніть відомості й нарахування по співробітниках, потім розраховуйте</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание36КонтекстноеМеню" id="785"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание36РасширеннаяПодсказка" id="786"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание36ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания58" id="787">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания58РасширеннаяПодсказка" id="788"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок57" id="789">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок57КонтекстноеМеню" id="790"/>
+									<ExtendedTooltip name="ДекорацияКружок57РасширеннаяПодсказка" id="791"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументов6НДФЛ" id="792">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументов6НДФЛКонтекстноеМеню" id="793"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументов6НДФЛРасширеннаяПодсказка" id="794"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияСЗВМ" id="803">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации форма 6-НДФЛ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации форма 6-НДФЛ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания отчетность ВПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису звітність ВПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияСЗВМРасширеннаяПодсказка" id="804"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты17" id="805">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты17РасширеннаяПодсказка" id="806"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания60" id="807">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания60РасширеннаяПодсказка" id="808"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок59" id="809">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок59КонтекстноеМеню" id="810"/>
+									<ExtendedTooltip name="ДекорацияКружок59РасширеннаяПодсказка" id="811"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание38" id="812">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируются раз в месяц и отправляется в ПФР по месту регистрации в течение 10 дней, следующего за отчетным</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формируются раз в месяц и отправляется в ПФР по месту регистрации в течение 10 дней, следующего за отчетным</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание38КонтекстноеМеню" id="813"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание38РасширеннаяПодсказка" id="814"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания61" id="815">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания61РасширеннаяПодсказка" id="816"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок60" id="817">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок60КонтекстноеМеню" id="818"/>
+									<ExtendedTooltip name="ДекорацияКружок60РасширеннаяПодсказка" id="819"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание39" id="820">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения&lt;/&gt;  по сотрудникам, затем рассчитывайте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сначала  заполните &lt;link СведенияПоСотрудникам&gt;сведения&lt;/&gt;  по сотрудникам, затем рассчитывайте</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание39КонтекстноеМеню" id="821"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание39РасширеннаяПодсказка" id="822"/>
+									<Events>
+										<Event name="URLProcessing">ДекорацияТекстОписание36ОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания62" id="823">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания62РасширеннаяПодсказка" id="824"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок61" id="825">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок61КонтекстноеМеню" id="826"/>
+									<ExtendedTooltip name="ДекорацияКружок61РасширеннаяПодсказка" id="827"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовСЗВМ" id="828">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовСЗВМКонтекстноеМеню" id="829"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовСЗВМРасширеннаяПодсказка" id="830"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДекорацииОписанияДекларации12" id="831">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации Декларация №12</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа декорации Декларация №12</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа декорации описания отчетность ВПФР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група декорації опису звітність ВПФР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДекорацииОписанияДекларации12РасширеннаяПодсказка" id="832"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДекорацииОписанияТексты18" id="833">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа декорации описания тексты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група декорації опису тексти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДекорацииОписанияТексты18РасширеннаяПодсказка" id="834"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДекорацииОписания63" id="835">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания63РасширеннаяПодсказка" id="836"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок62" id="837">
+									<Width>1</Width>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>•</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок62КонтекстноеМеню" id="838"/>
+									<ExtendedTooltip name="ДекорацияКружок62РасширеннаяПодсказка" id="839"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание40" id="840">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируются раз в квартал и отправляется в ФСРАР по месту регистрации в течение 20 дней, следующего за отчетным</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формируются раз в квартал и отправляется в ФСРАР по месту регистрации в течение 20 дней, следующего за отчетным</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание40КонтекстноеМеню" id="841"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание40РасширеннаяПодсказка" id="842"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания64" id="843">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания64РасширеннаяПодсказка" id="844"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок63" id="845">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>!</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок63КонтекстноеМеню" id="846"/>
+									<ExtendedTooltip name="ДекорацияКружок63РасширеннаяПодсказка" id="847"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекстОписание41" id="848">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сначала  заполните сведения  по розничным продажам алкоголя и торговым точкам, затем рассчитывайте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сначала  заполните сведения  по розничным продажам алкоголя и торговым точкам, затем рассчитывайте</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияТекстОписание41КонтекстноеМеню" id="849"/>
+									<ExtendedTooltip name="ДекорацияТекстОписание41РасширеннаяПодсказка" id="850"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДекорацииОписания65" id="851">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДекорацииОписания65РасширеннаяПодсказка" id="852"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКружок64" id="853">
+									<Width>1</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияКружок64КонтекстноеМеню" id="854"/>
+									<ExtendedTooltip name="ДекорацияКружок64РасширеннаяПодсказка" id="855"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНадписьПериодовДокументовДекларация12" id="856">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>70</MaxWidth>
+									<VerticalStretch>false</VerticalStretch>
+									<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(если документы за %1 уже внесены, то можно сразу приступать к формированию)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>(якщо документи за %1 вже внесені, то можна відразу приступати до формування)</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияНадписьПериодовДокументовДекларация12КонтекстноеМеню" id="857"/>
+									<ExtendedTooltip name="ДекорацияНадписьПериодовДокументовДекларация12РасширеннаяПодсказка" id="858"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияОтступ2" id="35">
+			<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ДекорацияОтступ2ExtendedTooltip" id="613"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаРасчетИОшибки" id="42">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасчетИОшибкиExtendedTooltip" id="614"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПереходКРасчету" id="158">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПереходКРасчетуExtendedTooltip" id="615"/>
+					<ChildItems>
+						<CommandBar name="ПанельПереходКРасчету" id="29">
+							<ExtendedTooltip name="ПанельПереходКРасчетуExtendedTooltip" id="616"/>
+							<ChildItems>
+								<Button name="ВыполнитьЗадачу" id="30">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ВыполнитьЗадачу</CommandName>
+									<ExtendedTooltip name="ВыполнитьЗадачуExtendedTooltip" id="617"/>
+								</Button>
+								<Button name="ПовторитьПроверку" id="131">
+									<Type>CommandBarButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.ПовторитьПроверку</CommandName>
+									<ExtendedTooltip name="ПовторитьПроверкуExtendedTooltip" id="618"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<Button name="ПеренестиВАрхив" id="161">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ПеренестиВАрхив</CommandName>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ExtendedTooltip name="ПеренестиВАрхивExtendedTooltip" id="620"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОшибки" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В результате анализа данных найдены проблемы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У результаті аналізу даних знайдені проблеми</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаОшибкиExtendedTooltip" id="621"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОшибка1" id="44">
+							<Visible>false</Visible>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОшибка1ExtendedTooltip" id="622"/>
+							<ChildItems>
+								<PictureField name="ОшибкаИлиПредупреждение1" id="45">
+									<DataPath>ОшибкаИлиПредупреждение1</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>3</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.ПредупрежденияОшибки</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<ContextMenu name="ОшибкаИлиПредупреждение1КонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ОшибкаИлиПредупреждение1ExtendedTooltip" id="623"/>
+								</PictureField>
+								<LabelField name="ОписаниеОшибки1" id="47">
+									<DataPath>ОписаниеОшибки1</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<VerticalAlign>Center</VerticalAlign>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<ContextMenu name="ОписаниеОшибки1КонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ОписаниеОшибки1ExtendedTooltip" id="624"/>
+									<Events>
+										<Event name="Click">ОписаниеОшибки1Нажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОшибка2" id="49">
+							<Visible>false</Visible>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОшибка2ExtendedTooltip" id="625"/>
+							<ChildItems>
+								<PictureField name="ОшибкаИлиПредупреждение2" id="50">
+									<DataPath>ОшибкаИлиПредупреждение2</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>3</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.ПредупрежденияОшибки</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<ContextMenu name="ОшибкаИлиПредупреждение2КонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ОшибкаИлиПредупреждение2ExtendedTooltip" id="626"/>
+								</PictureField>
+								<LabelField name="ОписаниеОшибки2" id="52">
+									<DataPath>ОписаниеОшибки2</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<VerticalAlign>Center</VerticalAlign>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<ContextMenu name="ОписаниеОшибки2КонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ОписаниеОшибки2ExtendedTooltip" id="627"/>
+									<Events>
+										<Event name="Click">ОписаниеОшибки2Нажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОшибка3" id="54">
+							<Visible>false</Visible>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОшибка3ExtendedTooltip" id="628"/>
+							<ChildItems>
+								<PictureField name="ОшибкаИлиПредупреждение3" id="55">
+									<DataPath>ОшибкаИлиПредупреждение3</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>3</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.ПредупрежденияОшибки</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<ContextMenu name="ОшибкаИлиПредупреждение3КонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ОшибкаИлиПредупреждение3ExtendedTooltip" id="629"/>
+								</PictureField>
+								<LabelField name="ОписаниеОшибки3" id="57">
+									<DataPath>ОписаниеОшибки3</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<VerticalAlign>Center</VerticalAlign>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<ContextMenu name="ОписаниеОшибки3КонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ОписаниеОшибки3ExtendedTooltip" id="630"/>
+									<Events>
+										<Event name="Click">ОписаниеОшибки3Нажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОшибка4" id="59">
+							<Visible>false</Visible>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОшибка4ExtendedTooltip" id="631"/>
+							<ChildItems>
+								<PictureField name="ОшибкаИлиПредупреждение4" id="60">
+									<DataPath>ОшибкаИлиПредупреждение4</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>3</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.ПредупрежденияОшибки</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<ContextMenu name="ОшибкаИлиПредупреждение4КонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ОшибкаИлиПредупреждение4ExtendedTooltip" id="632"/>
+								</PictureField>
+								<LabelField name="ОписаниеОшибки4" id="62">
+									<DataPath>ОписаниеОшибки4</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<VerticalAlign>Center</VerticalAlign>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<ContextMenu name="ОписаниеОшибки4КонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ОписаниеОшибки4ExtendedTooltip" id="633"/>
+									<Events>
+										<Event name="Click">ОписаниеОшибки4Нажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияФиксацияСдвигаКнопкиВыполнения" id="31">
+			<VerticalStretch>true</VerticalStretch>
+			<ContextMenu name="ДекорацияФиксацияСдвигаКнопкиВыполненияКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ДекорацияФиксацияСдвигаКнопкиВыполненияExtendedTooltip" id="634"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПодвал" id="673">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="674"/>
+			<ChildItems>
+				<LabelField name="Организация" id="675">
+					<DataPath>Организация</DataPath>
+					<Visible>false</Visible>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<TextColor>style:НадписьПредупрежденияЦвет</TextColor>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="676"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="677"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗадачаКалендаря" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача календаря</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завдання календаря</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗадачиКалендаряПодготовкиОтчетности</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючПоследнегоПротокола" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ последнего протокола</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ключ останнього протоколу</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПериодДокументовНачало" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период документов начало</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період документів початок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодДокументовОкончание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период документов начало</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період документів початок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПовторноеПредупреждение" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторное предупреждение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Повторне попередження</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СобытиеКалендаря" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Событие календаря</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Подія календаря</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КалендарьПодготовкиОтчетности</v8:Type>
+				<v8:Type>cfg:CatalogRef.КалендарьПерсональныхЗадачОтчетности</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеОшибки1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание ошибки1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Опис помилки1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеОшибки2" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание ошибки1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Опис помилки1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеОшибки3" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание ошибки1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Опис помилки1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеОшибки4" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание ошибки1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Опис помилки1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОшибкаИлиПредупреждение1" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка или предупреждение1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Помилка або попередження1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОшибкаИлиПредупреждение2" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка или предупреждение1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Помилка або попередження1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОшибкаИлиПредупреждение3" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка или предупреждение1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Помилка або попередження1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОшибкаИлиПредупреждение4" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка или предупреждение1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Помилка або попередження1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МассивРасшифровок" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Массив расшифровок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Масив розшифрувань</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Организация" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьЗадачу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить задачу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконати задачу</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьЗадачу</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПовторитьПроверку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторить проверку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Повторити перевірку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторить проверку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Повторити перевірку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПовторитьПроверку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПеренестиВАрхив" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в архив</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перенести в архів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если перенести задачу в архив, она не будет отображаться в списке текущих задач. Однако ее можно будет найти в архиве календаря налогов и отчетности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Якщо перенести завдання в архів, воно не буде відображатися в списку поточних завдань. Однак його можна буде знайти в архіві календаря податків і звітності</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.История</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПеренестиВАрхив</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="СобытиеКалендаря">
+			<Type>
+				<v8:Type>cfg:CatalogRef.КалендарьПодготовкиОтчетности</v8:Type>
+				<v8:Type>cfg:CatalogRef.КалендарьПерсональныхЗадачОтчетности</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="Организация">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="СброситьПараметрТекущегоСобытия">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

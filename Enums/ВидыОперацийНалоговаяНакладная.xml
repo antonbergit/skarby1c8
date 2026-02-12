@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="e8e24e1f-382e-4042-a1c5-6c6f92d93e03">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийНалоговаяНакладная" category="Ref">
+				<xr:TypeId>d5747c5e-9e94-4016-a97e-6ef5d427470d</xr:TypeId>
+				<xr:ValueId>1f8e8b1d-56d9-4df1-9621-ca0878165241</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийНалоговаяНакладная" category="Manager">
+				<xr:TypeId>b4e2c4e7-d5fb-4949-bdcd-4c92e1629f7d</xr:TypeId>
+				<xr:ValueId>fe53c457-a722-4dde-850f-e6ef0d7b8522</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийНалоговаяНакладная" category="List">
+				<xr:TypeId>af8a7f8e-a35d-4dda-9fa6-4bc4970b5065</xr:TypeId>
+				<xr:ValueId>6f873a0b-878d-434e-aa8a-1312962770bd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыОперацийНалоговаяНакладная</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды операций документа "Налоговая накладная"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види операцій документа "Податкова накладна"</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="9768b33f-7f8d-4018-8e95-4247b7d620e1">
+				<Properties>
+					<Name>ОблагаемыеОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, облагаемые НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, оподатковувані ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1da66bec-bf25-43bb-89d7-ed4a2540c90f">
+				<Properties>
+					<Name>ОсвобожденныеОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, освобожденные от  НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, звільнені від ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Операции, освобожденные от НДС (п.5)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c1bd79b3-bd2f-4e2c-9b3a-601311c1ce6d">
+				<Properties>
+					<Name>НеНДСОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, не являющиеся объектом налогообложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, що не є об`єктом оподатковування</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Операции, не объекты налогообложения по НДС (п. 3.2)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="93c43714-5a69-49d5-9990-9bebb191d445">
+				<Properties>
+					<Name>Корректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корректировка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коригування</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f97c0f86-3c46-46b6-81b9-f0e67adb6419">
+				<Properties>
+					<Name>ИтоговаяРозницаОблагаемыеОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоговая в рознице по облагаемому НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підсумкова в роздробі по оподатковуваному ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b09e1daf-3256-4298-a011-985e2e5f50ce">
+				<Properties>
+					<Name>ИтоговаяРозницаОсвобожденныеОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоговая в рознице по освобожденному НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підсумкова в роздробі по вивільненому ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4454d9ad-6c49-47d8-a99c-4f1a8a21e85a">
+				<Properties>
+					<Name>РозницаКонрагентуОблагаемыеОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализация в розницу плательщику НДС по облагаемому НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реалізація в роздріб платникові ПДВ по оподатковуваному ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="118f6afe-87f1-4df0-9c1f-1f12b614bd0b">
+				<Properties>
+					<Name>РозницаКонрагентуОсвобожденныеОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализация в розницу плательщику НДС по освобожденному НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реалізація в роздріб платникові ПДВ по звільненому ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8571a3b4-842d-4835-b9fb-f37c8376d502">
+				<Properties>
+					<Name>УсловнаяПродажа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условная продажа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Умовний продаж</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="94a03944-c5ea-4d95-a58b-77032601896f">
+				<Properties>
+					<Name>УсловнаяПродажаСписаниеОС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условная продажа при списании ОС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Умовний продаж при списанні ОЗ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="74ed5d21-6671-4683-b552-c6bcb46b0bcf">
+				<Properties>
+					<Name>РаботыОтНерезидента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работы от нерезидента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Роботи від нерезидента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6df8fdb1-4596-4ff0-9018-ddf36bbedd4f">
+				<Properties>
+					<Name>СводнаяНаПревышениеБазыНадЦенойПоставки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сводная на превышение базы над ценой поставки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зведена на перевищення бази над ціною поставки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

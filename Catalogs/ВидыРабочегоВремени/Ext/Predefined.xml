@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.4">
+	<Item id="8459cecf-198c-49e0-8b90-16e4cfecc7eb">
+		<Name>ВыходныеДни</Name>
+		<Code>00</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d2b98289-e29a-43ee-b07d-85d3770e993a">
+		<Name>НеоплачиваемыйОтпускПоЗаконодательству</Name>
+		<Code>19</Code>
+		<Description>БЗ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8e9801c3-3761-4953-b7e9-848d79a4fdc8">
+		<Name>ОсновнойОтпуск</Name>
+		<Code>08</Code>
+		<Description>В</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d63c41c4-24fa-4941-8851-bf7d7e932c9c">
+		<Name>Командировка</Name>
+		<Code>07</Code>
+		<Description>ВД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e808f305-f596-4a97-a9b3-42b7170be575">
+		<Name>ОтпускПоБеременностиИРодам</Name>
+		<Code>16</Code>
+		<Description>ВП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4335f742-6ac8-4b1a-8e14-45472ba6ef30">
+		<Name>РаботаВечерниеЧасы</Name>
+		<Code>03</Code>
+		<Description>ВЧ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c8ef46be-0352-452e-8287-cd2c32cb9820">
+		<Name>ДополнительныйОтпуск</Name>
+		<Code>09</Code>
+		<Description>Д</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b2d7d3e3-d44e-4d3c-b893-3d2e716bb17a">
+		<Name>НеоплачиваемыйДополнительныйОтпуск</Name>
+		<Code>14</Code>
+		<Description>ДБ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be0645a8-13c2-488e-8350-b62769aeeb31">
+		<Name>ОтпускПоУходуЗаРебенком</Name>
+		<Code>17</Code>
+		<Description>ДД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7197a69-9aaf-41f6-93cb-babc93fc2f2f">
+		<Name>ОтпускДополнительныйНаДетей</Name>
+		<Code>15</Code>
+		<Description>ДО</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5cfbe196-6e92-400e-87ec-cec3417fae76">
+		<Name>ДругиеНеявки</Name>
+		<Code>30</Code>
+		<Description>І</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d85fc71-8bde-4249-a835-2a3a661c1782">
+		<Name>ДругиеНеявкиПоКолДоговору</Name>
+		<Code>29</Code>
+		<Description>ІВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bbeff543-d614-411e-8c9e-dc409d66c273">
+		<Name>НеотработанноеВремяПоЗаконодательству</Name>
+		<Code>22</Code>
+		<Description>ІН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="533c7930-244e-4cf6-abf0-be235b3218b1">
+		<Name>ОтпускНаОбучение</Name>
+		<Code>12</Code>
+		<Description>Н</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="504bfe18-b092-4714-999e-4c7e76307019">
+		<Name>НеоплачиваемыйОтпускПоРазрешениюРаботодателя</Name>
+		<Code>18</Code>
+		<Description>НА</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="51e8d30b-8c63-43f5-8b89-b503d8d9717a">
+		<Name>ОтпускНаОбучениеНеоплачиваемый</Name>
+		<Code>13</Code>
+		<Description>НБ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5ead22cc-8dab-4c7f-b37b-647d9efbc3af">
+		<Name>ПереводНаНеполныйДень</Name>
+		<Code>20</Code>
+		<Description>НД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b73b70a-8669-4176-9562-dcbf7b585fce">
+		<Name>НеявкиПоНевыясненнымПричинам</Name>
+		<Code>28</Code>
+		<Description>НЗ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="68a9d6df-2445-4011-b343-f23ddf96d0c3">
+		<Name>БолезньБезОплаты</Name>
+		<Code>27</Code>
+		<Description>НН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ad4d58d3-56d3-4be4-87c8-aba78d38975d">
+		<Name>ПереводНаДругуюРаботу</Name>
+		<Code>21</Code>
+		<Description>НП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="67270617-372e-4bde-8dc1-ec883096c86b">
+		<Name>Сверхурочные</Name>
+		<Code>05</Code>
+		<Description>НУ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="31d7f8a8-1a7d-4f9d-8dc7-f48bade428af">
+		<Name>Простой</Name>
+		<Code>23</Code>
+		<Description>П</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cc5dec6f-ab6c-4520-93ae-70aea205d905">
+		<Name>Прогулы</Name>
+		<Code>24</Code>
+		<Description>ПР</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b12f0560-2df5-4b1b-9d62-8e68770ad05d">
+		<Name>Работа</Name>
+		<Code>01</Code>
+		<Description>Р</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c8686b8a-63a8-4cab-90f3-84c8ba76a965">
+		<Name>РаботаВыходныеИПраздничные</Name>
+		<Code>06</Code>
+		<Description>РВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fe46a5e0-1308-4223-9b6d-00fbc3d3e32a">
+		<Name>РаботаНочныеЧасы</Name>
+		<Code>04</Code>
+		<Description>РН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a3aeca99-180c-443b-91af-e75c953b146b">
+		<Name>РаботаНеполныйРабочийДень</Name>
+		<Code>02</Code>
+		<Description>РС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d6d247bd-8d71-4266-b4e4-fee8ba221813">
+		<Name>Забастовка</Name>
+		<Code>25</Code>
+		<Description>С</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0919735c-429c-4437-8723-b342e550d15a">
+		<Name>ОтпускТворческий</Name>
+		<Code>11</Code>
+		<Description>ТВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e94691fe-50d9-4d28-85db-b5666f91dd55">
+		<Name>Болезнь</Name>
+		<Code>26</Code>
+		<Description>ТН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f3ac91b8-463b-45f4-9fa7-ca896dc1d81a">
+		<Name>ОтпускЧернобыльский</Name>
+		<Code>10</Code>
+		<Description>Ч</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

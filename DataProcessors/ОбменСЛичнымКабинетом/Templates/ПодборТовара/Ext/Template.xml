@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наличие</dataPath>
+			<field>Наличие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наличие</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Наявність</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦен</dataPath>
+			<field>ТипЦен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип цен</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тип цін</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ціна</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦенСайт</dataPath>
+			<field>ТипЦенСайт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип цен сайт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тип цін сайт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПрисоединенныхФайлов</dataPath>
+			<field>КоличествоПрисоединенныхФайлов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество присоединенных файлов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість приєднаних файлів</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КатегорияНоменклатуры</dataPath>
+			<field>КатегорияНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория номеклатуры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Категорія номеклатуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	"Номенклатура" КАК Источник,
+	Номенклатура.Ссылка КАК Ссылка
+ПОМЕСТИТЬ НоменклатураИзменения
+ИЗ
+	Справочник.Номенклатура.Изменения КАК Номенклатура
+ГДЕ
+	Номенклатура.Узел = &amp;УзелРегистрацииИзменений
+	И &amp;ВыгружатьТолькоИзменения
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СправочникНоменклатура.Ссылка КАК Номенклатура,
+	СправочникНоменклатура.КатегорияНоменклатуры КАК КатегорияНоменклатуры
+ПОМЕСТИТЬ СправочникНоменклатура
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура
+ГДЕ
+	НЕ СправочникНоменклатура.ЭтоГруппа
+	И ВЫБОР
+			КОГДА &amp;ВыгружатьТолькоИзменения
+				ТОГДА СправочникНоменклатура.Ссылка В
+						(ВЫБРАТЬ
+							Т.Ссылка
+						ИЗ
+							НоменклатураИзменения КАК Т)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+{ГДЕ
+	СправочникНоменклатура.Ссылка.* КАК Номенклатура,
+	СправочникНоменклатура.КатегорияНоменклатуры.* КАК КатегорияНоменклатуры}
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	КатегорияНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СправочникНоменклатура.Номенклатура КАК Номенклатура,
+	СправочникНоменклатура.КатегорияНоменклатуры,
+	ЕСТЬNULL(ХарактеристикиНоменклатуры.Ссылка, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК Характеристика
+ПОМЕСТИТЬ НоменклатураХарактеристики
+ИЗ
+	СправочникНоменклатура КАК СправочникНоменклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+		ПО (СправочникНоменклатура.Номенклатура = ХарактеристикиНоменклатуры.Владелец
+				ИЛИ СправочникНоменклатура.КатегорияНоменклатуры = ХарактеристикиНоменклатуры.Владелец)
+			И (&amp;ИспользоватьХарактеристики)
+			И (СправочникНоменклатура.Номенклатура.ИспользоватьХарактеристики)
+{ГДЕ
+	(ЕСТЬNULL(ХарактеристикиНоменклатуры.Ссылка, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка))).* КАК Характеристика}
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураОстатки.Номенклатура КАК Номенклатура,
+	ВЫБОР
+		КОГДА &amp;ИспользоватьХарактеристики
+				И НоменклатураОстатки.Номенклатура.ИспользоватьХарактеристики
+			ТОГДА НоменклатураОстатки.Характеристика
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	КОНЕЦ КАК Характеристика,
+	НоменклатураОстатки.СтруктурнаяЕдиница КАК Склад,
+	СУММА(НоменклатураОстатки.КоличествоОстаток) КАК ОстаткиКоличество
+ПОМЕСТИТЬ НоменклатураОстатки
+ИЗ
+	РегистрНакопления.ЗапасыНаСкладах.Остатки(
+			,
+			(Номенклатура, ВЫБОР
+				КОГДА &amp;ИспользоватьХарактеристики
+						И Номенклатура.ИспользоватьХарактеристики
+					ТОГДА Характеристика
+				ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+			КОНЕЦ) В
+				(ВЫБРАТЬ
+					Т.Номенклатура,
+					Т.Характеристика
+				ИЗ
+					НоменклатураХарактеристики КАК Т)) КАК НоменклатураОстатки
+{ГДЕ
+	НоменклатураОстатки.СтруктурнаяЕдиница.* КАК Склад}
+
+СГРУППИРОВАТЬ ПО
+	НоменклатураОстатки.Номенклатура,
+	ВЫБОР
+		КОГДА &amp;ИспользоватьХарактеристики
+				И НоменклатураОстатки.Номенклатура.ИспользоватьХарактеристики
+			ТОГДА НоменклатураОстатки.Характеристика
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	КОНЕЦ,
+	НоменклатураОстатки.СтруктурнаяЕдиница
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураЦены.Номенклатура КАК Номенклатура,
+	НоменклатураЦены.Характеристика КАК Характеристика,
+	ВЫРАЗИТЬ(НоменклатураЦены.Цена / ЕСТЬNULL(ЕдиницыИзмерения.Коэффициент, 1) КАК ЧИСЛО(15, 2)) КАК Цена,
+	ВидыЦен.Ссылка КАК ВидЦены,
+	ВидыЦен.ВалютаЦены КАК ВалютаЦены
+ПОМЕСТИТЬ НоменклатураЦены
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			ВидЦен В (&amp;КатегорияЦены1, &amp;КатегорияЦены2)
+				И (Номенклатура, Характеристика) В
+					(ВЫБРАТЬ
+						Т.Номенклатура,
+						Т.Характеристика
+					ИЗ
+						НоменклатураХарактеристики КАК Т)) КАК НоменклатураЦены
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВидыЦен КАК ВидыЦен
+		ПО (ВидыЦен.Ссылка = НоменклатураЦены.ВидЦен)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЕдиницыИзмерения КАК ЕдиницыИзмерения
+		ПО (ЕдиницыИзмерения.Ссылка = НоменклатураЦены.ЕдиницаИзмерения)
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураФайлы.ВладелецФайла КАК Номенклатура,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ НоменклатураФайлы.Ссылка) КАК КоличествоПрисоединенныхФайлов
+ПОМЕСТИТЬ НоменклатураФайлы
+ИЗ
+	Справочник.НоменклатураПрисоединенныеФайлы КАК НоменклатураФайлы
+ГДЕ
+	НЕ НоменклатураФайлы.ПометкаУдаления
+	И НоменклатураФайлы.ВладелецФайла В
+			(ВЫБРАТЬ РАЗЛИЧНЫЕ
+				Т.Номенклатура
+			ИЗ
+				СправочникНоменклатура КАК Т)
+
+СГРУППИРОВАТЬ ПО
+	НоменклатураФайлы.ВладелецФайла
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураХарактеристики.Номенклатура,
+	НоменклатураХарактеристики.КатегорияНоменклатуры,
+	НоменклатураХарактеристики.Характеристика,
+	ЕСТЬNULL(НоменклатураОстатки.ОстаткиКоличество, 0) КАК ОстаткиКоличество,
+	ЕСТЬNULL(НоменклатураЦены.Цена, 0) КАК Цена,
+	ЕСТЬNULL(НоменклатураЦены.ВалютаЦены, ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка)) КАК Валюта,
+	ЕСТЬNULL(НоменклатураЦены.ВидЦены, ЗНАЧЕНИЕ(Справочник.ВидыЦен.ПустаяСсылка)) КАК ТипЦен,
+	ЕСТЬNULL(НоменклатураФайлы.КоличествоПрисоединенныхФайлов, 0) КАК КоличествоПрисоединенныхФайлов
+ПОМЕСТИТЬ Результат
+ИЗ
+	НоменклатураХарактеристики КАК НоменклатураХарактеристики
+		ЛЕВОЕ СОЕДИНЕНИЕ НоменклатураОстатки КАК НоменклатураОстатки
+		ПО НоменклатураХарактеристики.Номенклатура = НоменклатураОстатки.Номенклатура
+			И НоменклатураХарактеристики.Характеристика = НоменклатураОстатки.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ НоменклатураЦены КАК НоменклатураЦены
+		ПО НоменклатураХарактеристики.Номенклатура = НоменклатураЦены.Номенклатура
+			И НоменклатураХарактеристики.Характеристика = НоменклатураЦены.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ НоменклатураФайлы КАК НоменклатураФайлы
+		ПО НоменклатураХарактеристики.Номенклатура = НоменклатураФайлы.Номенклатура
+{ГДЕ
+	(ЕСТЬNULL(НоменклатураЦены.ВалютаЦены, ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка))).* КАК Валюта,
+	(ЕСТЬNULL(НоменклатураЦены.ВидЦены, ЗНАЧЕНИЕ(Справочник.ВидыЦен.ПустаяСсылка))).* КАК ТипЦен,
+	(ЕСТЬNULL(НоменклатураФайлы.КоличествоПрисоединенныхФайлов, 0)) КАК КоличествоПрисоединенныхФайлов}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Результат.Номенклатура КАК Номенклатура,
+	Результат.КатегорияНоменклатуры КАК КатегорияНоменклатуры,
+	Результат.Характеристика КАК Характеристика,
+	Результат.Цена КАК Цена,
+	Результат.Валюта КАК Валюта,
+	Результат.ТипЦен КАК ТипЦен,
+	Результат.КоличествоПрисоединенныхФайлов КАК КоличествоПрисоединенныхФайлов,
+	ВЫРАЗИТЬ(ВЫБОР
+			КОГДА Результат.ТипЦен = ЗНАЧЕНИЕ(Справочник.ВидыЦен.ПустаяСсылка)
+				ТОГДА ""
+			КОГДА Результат.ТипЦен = &amp;КатегорияЦены1
+				ТОГДА "Розничная"
+			КОГДА Результат.ТипЦен = &amp;КатегорияЦены2
+				ТОГДА "Оптовая"
+			ИНАЧЕ ""
+		КОНЕЦ КАК СТРОКА(15)) КАК ТипЦенСайт,
+	ВЫБОР
+		КОГДА Результат.ОстаткиКоличество &gt; 0
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Наличие,
+	ВЫБОР
+		КОГДА Результат.ОстаткиКоличество &gt; 0
+			ТОГДА Результат.ОстаткиКоличество
+		ИНАЧЕ 0
+	КОНЕЦ КАК Количество
+{ВЫБРАТЬ
+	Номенклатура,
+	КатегорияНоменклатуры,
+	Характеристика.*,
+	Цена,
+	Валюта.*,
+	ТипЦен.*,
+	ТипЦенСайт,
+	Наличие,
+	Количество,
+	КоличествоПрисоединенныхФайлов}
+ИЗ
+	Результат КАК Результат
+{ГДЕ
+	Результат.Цена,
+	(ВЫРАЗИТЬ(ВЫБОР
+				КОГДА Результат.ТипЦен = ЗНАЧЕНИЕ(Справочник.ВидыЦен.ПустаяСсылка)
+					ТОГДА ""
+				КОГДА Результат.ТипЦен = &amp;КатегорияЦены1
+					ТОГДА "Розничная"
+				КОГДА Результат.ТипЦен = &amp;КатегорияЦены2
+					ТОГДА "Оптовая"
+				ИНАЧЕ ""
+			КОНЕЦ КАК СТРОКА(15))) КАК ТипЦенСайт,
+	(ВЫБОР
+			КОГДА Результат.ОстаткиКоличество &gt; 0
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК Наличие,
+	(ВЫБОР
+			КОГДА Результат.ОстаткиКоличество &gt; 0
+				ТОГДА Результат.ОстаткиКоличество
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Количество}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ НоменклатураИзменения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ СправочникНоменклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ НоменклатураХарактеристики
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ НоменклатураОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ НоменклатураЦены
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ НоменклатураФайлы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ Результат</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<parameter>
+		<name>ИспользоватьХарактеристики</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Использовать характеристики</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Використати характеристики</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КатегорияЦены1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Категория цены1</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Категорія ціни1</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КатегорияЦены2</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Категория цены2</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Категорія ціни2</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВыгружатьТолькоИзменения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выгружать только изменения</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Вивантажувати тільки зміни</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УзелРегистрацииИзменений</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Узел регистрации изменений</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Вузол реєстрації змін</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:TypeSet xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ExchangePlanRef</v8:TypeSet>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипЦенСайт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Валюта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Наличие</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипЦен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПрисоединенныхФайлов</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КатегорияЦены2</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

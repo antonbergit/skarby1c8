@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.4">
+	<Item id="d37e226b-8be0-4670-bf26-67a5587e11eb">
+		<Name>ВзносыФОТ</Name>
+		<Code>00-000004</Code>
+		<Description>Взносы на ФОТ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="437c7da2-c44c-4bbc-8b44-986f5f189fd2">
+		<Name>Взносы</Name>
+		<Code>00-000003</Code>
+		<Description>Взносы работников из зарплаты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0dbb9f7c-5399-4147-910a-914d4e1e0af6">
+		<Name>ВоенныйСбор</Name>
+		<Code>00-000005</Code>
+		<Description>Военный сбор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c212e784-0aea-4157-ada4-1625c1c32346">
+		<Name>ЕСВ</Name>
+		<Code>00-000007</Code>
+		<Description>Единый социальный взнос</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7d426757-6afb-49e6-b081-3a704f86b0b2">
+		<Name>ОплатаТруда</Name>
+		<Code>00-000006</Code>
+		<Description>Оплата труда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

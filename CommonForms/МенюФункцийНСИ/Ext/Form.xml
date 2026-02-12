@@ -1,0 +1,1018 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="165">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="166"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапка1" id="144">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група шапка1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група шапка1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапка1РасширеннаяПодсказка" id="145"/>
+					<ChildItems>
+						<UsualGroup name="Компания" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Компания</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Компанія</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Компания</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Компанія</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="КомпанияРасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<Button name="ОткрытьОрганизации" id="202">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьОрганизации</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Організації</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ОткрытьОрганизацииРасширеннаяПодсказка" id="203"/>
+								</Button>
+								<Button name="СправочникБанковскиеСчетаОткрытьСписокБанковскихСчетовОрганизаций" id="188">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.БанковскиеСчета.Command.ОткрытьСписокБанковскихСчетовОрганизаций</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникБанковскиеСчетаОткрытьСписокБанковскихСчетовОрганизацийРасширеннаяПодсказка" id="189"/>
+								</Button>
+								<Button name="ОткрытьСклады" id="204">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьСклады</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Склады</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Склади</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ОткрытьСкладыРасширеннаяПодсказка" id="205"/>
+								</Button>
+								<Button name="ОткрытьПодразделения" id="206">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьПодразделения</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подразделения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Підрозділи</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ОткрытьПодразделенияРасширеннаяПодсказка" id="207"/>
+								</Button>
+								<Button name="СправочникКассыОткрытьСписок" id="45">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Кассы.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКассыОткрытьСписокExtendedTooltip" id="99"/>
+								</Button>
+								<Button name="ОткрытьНаправленияДеятельности" id="208">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьНаправленияДеятельности</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Направления деятельности</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Напрямки діяльності</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ОткрытьНаправленияДеятельностиРасширеннаяПодсказка" id="209"/>
+								</Button>
+								<Button name="СправочникКлючевыеРесурсыОткрытьСписок" id="69">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.КлючевыеРесурсы.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКлючевыеРесурсыОткрытьСписокExtendedTooltip" id="97"/>
+								</Button>
+								<Button name="СправочникКалендариОткрытьСписок" id="48">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Календари.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКалендариОткрытьСписокExtendedTooltip" id="101"/>
+								</Button>
+								<Button name="ПланСчетовУправленческийОткрытьСписок" id="184">
+									<Type>UsualButton</Type>
+									<CommandName>ChartOfAccounts.Управленческий.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ПланСчетовУправленческийОткрытьСписокРасширеннаяПодсказка" id="185"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапка2" id="146">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група шапка2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група шапка2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапка2РасширеннаяПодсказка" id="147"/>
+					<ChildItems>
+						<UsualGroup name="Контрагенты" id="19">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контрагенты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Контрагенти</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контрагенты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Контрагенти</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="КонтрагентыExtendedTooltip" id="103"/>
+							<ChildItems>
+								<Button name="СправочникКонтрагентыОткрытьСписок" id="49">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Контрагенты.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКонтрагентыОткрытьСписокExtendedTooltip" id="104"/>
+								</Button>
+								<Button name="СправочникРолиКонтактныхЛицОткрытьСписок" id="52">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.РолиКонтактныхЛиц.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникРолиКонтактныхЛицОткрытьСписокExtendedTooltip" id="105"/>
+								</Button>
+								<Button name="СправочникБланкиДоговоровОткрытьСписокБланковДоговоров" id="135">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.БланкиДоговоров.Command.ОткрытьСписокБланковДоговоров</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Бланки договоров</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Бланки договорів</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникБланкиДоговоровОткрытьСписокБланковДоговоровРасширеннаяПодсказка" id="136"/>
+								</Button>
+								<Button name="СправочникДополнительныеУсловияОткрытьСписок" id="186">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ДополнительныеУсловия.Command.ОткрытьСписок</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникДополнительныеУсловияОткрытьСписокРасширеннаяПодсказка" id="187"/>
+								</Button>
+								<Button name="СправочникСегментыОткрытьСписок" id="182">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Сегменты.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникСегментыОткрытьСписокРасширеннаяПодсказка" id="183"/>
+								</Button>
+								<Button name="СправочникТегиОткрытьСписок" id="180">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Теги.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникТегиОткрытьСписокРасширеннаяПодсказка" id="181"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Розница" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Розница</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Роздріб</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Розница</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Роздріб</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="РозницаExtendedTooltip" id="106"/>
+							<ChildItems>
+								<Button name="СправочникКассыККМОткрытьСписок" id="46">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.КассыККМ.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКассыККМОткрытьСписокExtendedTooltip" id="107"/>
+								</Button>
+								<Button name="СправочникЭквайринговыеТерминалыОткрытьСписок" id="47">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ЭквайринговыеТерминалы.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникЭквайринговыеТерминалыОткрытьСписокExtendedTooltip" id="108"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапка3" id="148">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група шапка3</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група шапка3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапка3РасширеннаяПодсказка" id="149"/>
+					<ChildItems>
+						<UsualGroup name="Номенклатура" id="27">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="НоменклатураExtendedTooltip" id="110"/>
+							<ChildItems>
+								<Button name="СправочникНоменклатураОткрытьСписок" id="50">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Номенклатура.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникНоменклатураОткрытьСписокExtendedTooltip" id="111"/>
+								</Button>
+								<Button name="СправочникКатегорииНоменклатурыОткрытьСписок" id="51">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.КатегорииНоменклатуры.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКатегорииНоменклатурыОткрытьСписокРасширеннаяПодсказка" id="112"/>
+								</Button>
+								<Button name="СправочникКлассификаторЕдиницИзмеренияОткрытьСписок" id="53">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.КлассификаторЕдиницИзмерения.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКлассификаторЕдиницИзмеренияОткрытьСписокExtendedTooltip" id="113"/>
+								</Button>
+								<Button name="СправочникШаблоныЭтикетокИЦенниковОткрытьСписок" id="54">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ШаблоныЭтикетокИЦенников.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникШаблоныЭтикетокИЦенниковОткрытьСписокExtendedTooltip" id="114"/>
+								</Button>
+								<Button name="СправочникНомераГТДОткрытьСписок" id="55">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.НомераГТД.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникНомераГТДОткрытьСписокExtendedTooltip" id="115"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Сотрудники" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сотрудники</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Співробітники</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сотрудники</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Співробітники</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="СотрудникиExtendedTooltip" id="121"/>
+							<ChildItems>
+								<Button name="СправочникСотрудникиОткрытьСписок" id="67">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Сотрудники.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникСотрудникиОткрытьСписокExtendedTooltip" id="122"/>
+								</Button>
+								<Button name="СправочникБригадыОткрытьСписок" id="68">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Бригады.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникБригадыОткрытьСписокExtendedTooltip" id="123"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Подвал" id="167">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="168"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПодвал1" id="169">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подвал1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група підвал1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подвал1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група підвал1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодвал1РасширеннаяПодсказка" id="170"/>
+					<ChildItems>
+						<UsualGroup name="ФизическиеЛица" id="66">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Физические лица</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Фізичні особи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Физические лица</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Фізичні особи</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ФизическиеЛицаExtendedTooltip" id="124"/>
+							<ChildItems>
+								<Button name="СправочникФизическиеЛицаОткрытьСписок" id="70">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ФизическиеЛица.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникФизическиеЛицаОткрытьСписокExtendedTooltip" id="125"/>
+								</Button>
+								<Button name="СправочникВидыДокументовФизическихЛицОткрытьСписок" id="71">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ВидыДокументовФизическихЛиц.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникВидыДокументовФизическихЛицОткрытьСписокExtendedTooltip" id="126"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Налоги" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налоги</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Податки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налоги</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Податки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="НалогиExtendedTooltip" id="128"/>
+							<ChildItems>
+								<Button name="СправочникВидыНалоговОткрытьСписок" id="78">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ВидыНалогов.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникВидыНалоговОткрытьСписокExtendedTooltip" id="129"/>
+								</Button>
+								<Button name="СправочникСтавкиНДСОткрытьСписок" id="79">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.СтавкиНДС.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникСтавкиНДСОткрытьСписокExtendedTooltip" id="130"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПодвал2" id="171">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подвал2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група підвал2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подвал2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група підвал2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодвал2РасширеннаяПодсказка" id="172"/>
+					<ChildItems>
+						<UsualGroup name="БазовыеКлассификаторы" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Базовые классификаторы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Базові класифікатори</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Базовые классификаторы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Базові класифікатори</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="БазовыеКлассификаторыExtendedTooltip" id="131"/>
+							<ChildItems>
+								<Button name="ОбщаяКомандаОткрытьВалюты" id="80">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Валюты.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ОбщаяКомандаОткрытьВалютыExtendedTooltip" id="132"/>
+								</Button>
+								<Button name="СправочникБанкиОткрытьСписок" id="81">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Банки.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникБанкиОткрытьСписокExtendedTooltip" id="133"/>
+								</Button>
+								<Button name="СправочникСтраныМираОткрытьСписок" id="82">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.СтраныМира.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникСтраныМираОткрытьСписокExtendedTooltip" id="134"/>
+								</Button>
+								<Button name="СправочникВидыАлкогольнойПродукцииОткрытьСписок" id="178">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ВидыАлкогольнойПродукции.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды алкогольной продукции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Види алкогольної продукції</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникВидыАлкогольнойПродукцииОткрытьСписокРасширеннаяПодсказка" id="179"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ЕГАИС" id="190">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЕГАИС</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ЄДАІС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЕГАИС</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ЄДАІС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ЕГАИСРасширеннаяПодсказка" id="191"/>
+							<ChildItems>
+								<Button name="СправочникКлассификаторОрганизацийЕГАИСОткрытьСписок" id="192">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.КлассификаторОрганизацийЕГАИС.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор организаций</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Классификатор организаций</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКлассификаторОрганизацийЕГАИСОткрытьСписокРасширеннаяПодсказка" id="193"/>
+								</Button>
+								<Button name="СправочникВидыАлкогольнойПродукцииЕГАИСОткрытьСписок" id="194">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ВидыАлкогольнойПродукции.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды алкогольной продукции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Види алкогольної продукції</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникВидыАлкогольнойПродукцииЕГАИСОткрытьСписокРасширеннаяПодсказка" id="195"/>
+								</Button>
+								<Button name="СправочникКлассификаторАлкогольнойПродукцииЕГАИСОткрытьСписок" id="196">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.КлассификаторАлкогольнойПродукцииЕГАИС.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор алкогольной продукции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Классификатор алкогольной продукции</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникКлассификаторАлкогольнойПродукцииЕГАИСОткрытьСписокРасширеннаяПодсказка" id="197"/>
+								</Button>
+								<Button name="СправочникСправкиАЕГАИСОткрытьСписок" id="198">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.СправкиАЕГАИС.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникСправкиАЕГАИСОткрытьСписокРасширеннаяПодсказка" id="199"/>
+								</Button>
+								<Button name="СправочникСправкиБЕГАИСОткрытьСписок" id="200">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.СправкиБЕГАИС.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникСправкиБЕГАИСОткрытьСписокРасширеннаяПодсказка" id="201"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПодвал3" id="173">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подвал3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група підвал3</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подвал3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група підвал3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодвал3РасширеннаяПодсказка" id="174"/>
+					<ChildItems>
+						<UsualGroup name="ПрайсЛисты" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прайс-листы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Прайс-листи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прайс-листы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Прайс-листи</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>25</Width>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ПрайсЛистыExtendedTooltip" id="116"/>
+							<ChildItems>
+								<Button name="ОбработкаПрайсЛистОткрытьПрайсЛист" id="56">
+									<Type>UsualButton</Type>
+									<CommandName>CommonCommand.ПрайсЛисты</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ОбработкаПрайсЛистОткрытьПрайсЛистExtendedTooltip" id="117"/>
+								</Button>
+								<Button name="СправочникВидыСкидокНаценокОткрытьСписок" id="57">
+									<Type>UsualButton</Type>
+									<CommandName>DataProcessor.ВидыСкидокНаценокРучныеИАвтоматические.Command.ОткрытьОсновнуюФормуОбработки</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникВидыСкидокНаценокОткрытьСписокExtendedTooltip" id="118"/>
+								</Button>
+								<Button name="СправочникЦеновыеГруппыОткрытьСписок" id="58">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.ЦеновыеГруппы.StandardCommand.OpenList</CommandName>
+									<TextColor>style:FormTextColor</TextColor>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="СправочникЦеновыеГруппыОткрытьСписокExtendedTooltip" id="119"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ФОУчетПоНесколькимОрганизациям" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФОУчет по нескольким организациям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ФООблік по декільком організаціям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФОУчетПоНесколькимСкладам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФОУчет по нескольким складам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ФООблік по декільком складам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФОУчетПоНесколькимПодразделениям" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФОУчет по нескольким подразделениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ФООблік по декільком підрозділам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФОУчетПоНесколькимНаправлениямДеятельности" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФОУчет по нескольким направлениям деятельности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ФООблік по декільком напрямкам діяльності</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьОрганизации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть организации</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьОрганизации</Action>
+		</Command>
+		<Command name="ОткрытьСклады" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть склады</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть склады</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьСклады</Action>
+		</Command>
+		<Command name="ОткрытьПодразделения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть подразделения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть подразделения</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьПодразделения</Action>
+		</Command>
+		<Command name="ОткрытьНаправленияДеятельности" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть направления деятельности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть направления деятельности</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьНаправленияДеятельности</Action>
+		</Command>
+	</Commands>
+</Form>

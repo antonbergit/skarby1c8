@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройки подключаемого оборудования</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Налаштування підключаємого обладнання</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НастройкиПодключаемоеОборудование" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключаемое оборудование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування підключаєме обладнання</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключаемое оборудование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування підключаєме обладнання</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НастройкиПодключаемоеОборудованиеExtendedTooltip" id="64"/>
+			<ChildItems>
+				<LabelDecoration name="НастройкиПодключаемоеОборудованиеОписание" id="8">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключение и настройка оборудования</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підключення й налаштування обладнання</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НастройкиПодключаемоеОборудованиеОписаниеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="НастройкиПодключаемоеОборудованиеОписаниеExtendedTooltip" id="65"/>
+				</LabelDecoration>
+				<UsualGroup name="НастройкиПодключаемоеОборудованиеСправочники" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подключаемое оборудование справочники</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування підключаєме обладнання довідники</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подключаемое оборудование справочники</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування підключаєме обладнання довідники</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="НастройкиПодключаемоеОборудованиеСправочникиExtendedTooltip" id="66"/>
+					<ChildItems>
+						<UsualGroup name="НастройкиПодключаемоеОборудованиеСправочникиЛево" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки подключаемое оборудование справочники лево</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Налаштування підключаєме обладнання довідники ліво</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки подключаемое оборудование справочники лево</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Налаштування підключаєме обладнання довідники ліво</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="НастройкиПодключаемоеОборудованиеСправочникиЛевоExtendedTooltip" id="67"/>
+							<ChildItems>
+								<Button name="СправочникПодключаемоеОборудование" id="19">
+									<Type>Hyperlink</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.СправочникПодключаемоеОборудование</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подключаемое оборудование</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Підключаєме обладнання</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СправочникПодключаемоеОборудованиеExtendedTooltip" id="68"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="СправочникРабочиеМеста" id="61">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ОткрытьРабочиеМеста</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рабочие места</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Робочі місця</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СправочникРабочиеМестаExtendedTooltip" id="69"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастройкиУчетПоНесколькимПодразделениям" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки учет по нескольким подразделениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування облік по декільком підрозділам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки учет по нескольким подразделениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування облік по декільком підрозділам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НастройкиУчетПоНесколькимПодразделениямExtendedTooltip" id="70"/>
+			<ChildItems>
+				<CheckBoxField name="ФункциональнаяОпцияИспользоватьОбменСПодключаемымОборудованиемOffline" id="28">
+					<DataPath>НаборКонстант.ИспользоватьОбменСПодключаемымОборудованиемOffline</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать обмен с подключаемым оборудованием Offline</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Використовувати обмін з підключаємим обладнанням Offline</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФункциональнаяОпцияИспользоватьОбменСПодключаемымОборудованиемOfflineКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ФункциональнаяОпцияИспользоватьОбменСПодключаемымОборудованиемOfflineExtendedTooltip" id="71"/>
+					<Events>
+						<Event name="OnChange">ФункциональнаяОпцияИспользоватьОбменСПодключаемымОборудованиемOfflineПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="НастройкиОбменСПодключаемымОборудованиемOffline" id="30">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включение опции необходимо для использования касс ККМ, весов с печатью этикеток.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Включення опції необхідно для використання кас ККМ, ваг з друком етикеток.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НастройкиОбменСПодключаемымОборудованиемOfflineКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="НастройкиОбменСПодключаемымОборудованиемOfflineExtendedTooltip" id="72"/>
+				</LabelDecoration>
+				<UsualGroup name="НастройкиОбменСПодключаемымОборудованиемOfflineСправочники" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки обмен с подключаемым оборудованием offline справочники</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування обмін з підключаємим обладнанням offline довідники</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки обмен с подключаемым оборудованием offline справочники</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування обмін з підключаємим обладнанням offline довідники</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="НастройкиОбменСПодключаемымОборудованиемOfflineСправочникиExtendedTooltip" id="73"/>
+					<ChildItems>
+						<Button name="ОткрытьПравилаОбменаСПодключаемымОборудованием" id="33">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ОткрытьПравилаОбменаСПодключаемымОборудованием</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила обмена с подключаемым оборудованием Offline</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Правила обміну з підключаємим обладнанням Offline</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОткрытьПравилаОбменаСПодключаемымОборудованиемExtendedTooltip" id="74"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="Команды" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команди</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команди</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="КомандыExtendedTooltip" id="75"/>
+			<ChildItems>
+				<Button name="ЗаписатьИЗакрыть" id="58">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+					<ExtendedTooltip name="ЗаписатьИЗакрытьExtendedTooltip" id="76"/>
+				</Button>
+				<Button name="Записать" id="59">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Write</CommandName>
+					<ExtendedTooltip name="ЗаписатьExtendedTooltip" id="77"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Набір констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ЧастотаРасчетаКурсовыхРазниц.Ref</Field>
+				<Field>НаборКонстант.УдалитьКонтекстКриптографии.Ref</Field>
+				<Field>НаборКонстант.УдалитьКонтекстАвторизации.Ref</Field>
+				<Field>НаборКонстант.РежимИспользованияИнформационнойБазы.Ref</Field>
+				<Field>НаборКонстант.ПровайдерSMS.Ref</Field>
+				<Field>НаборКонстант.ПрайсЛистВыводитьПолноеНаименование.Ref</Field>
+				<Field>НаборКонстант.ПрайсЛистВыводитьКод.Ref</Field>
+				<Field>НаборКонстант.ПереноситьДатуЗапретаРедактирования.Ref</Field>
+				<Field>НаборКонстант.НациональнаяВалюта</Field>
+				<Field>НаборКонстант.ЗачитыватьАвансыДолгиАвтоматически.Ref</Field>
+				<Field>НаборКонстант.ВариантыСовместногоПримененияСкидокНаценок.Ref</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СправочникПодключаемоеОборудование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключаемое оборудование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підключаєме обладнання</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочник подключаемое оборудование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Довідник підключаєме обладнання</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СправочникПодключаемоеОборудование</Action>
+		</Command>
+		<Command name="ОткрытьПравилаОбменаСПодключаемымОборудованием" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила обмена с подключаемым оборудованием Offline</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Правила обміну з підключаємим обладнанням Offline</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть правила обмена с подключаемым оборудованием</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити правила обміну з підключаємим обладнанням</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПравилаОбменаСПодключаемымОборудованием</Action>
+		</Command>
+		<Command name="ОткрытьРабочиеМеста" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочие места</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Робочі місця</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть рабочие места</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити робочі місця</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьРабочиеМеста</Action>
+		</Command>
+	</Commands>
+</Form>

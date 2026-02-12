@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="49065a34-787c-4f59-8dd5-95bbe6f94cc4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийРегистрацияВходящегоНалоговогоДокумента" category="Ref">
+				<xr:TypeId>75f94125-c2b8-46c1-9659-fcc2b7f9ec31</xr:TypeId>
+				<xr:ValueId>61afa93d-1ea7-4e80-ae4b-767ede0e8e7b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийРегистрацияВходящегоНалоговогоДокумента" category="Manager">
+				<xr:TypeId>bd37a308-3897-47d0-9366-49ddb6abb378</xr:TypeId>
+				<xr:ValueId>94ebdb93-72b9-4c1a-8410-5435b03d3906</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийРегистрацияВходящегоНалоговогоДокумента" category="List">
+				<xr:TypeId>9bc1bd24-4003-4936-978e-332021901dd7</xr:TypeId>
+				<xr:ValueId>6f7042b1-7839-4dd1-b99e-ee42246ff645</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыОперацийРегистрацияВходящегоНалоговогоДокумента</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды операций регистрация входящего налогового документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види операцій реєстрація вхідного податкового документа</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Виды операций документа регистрация входящего налогового документа</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>QuickChoice</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="7f03c333-ea25-42f9-a267-d89cdc2c7d8a">
+				<Properties>
+					<Name>НалоговаяНакладная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налоговая накладная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Податкова накладна</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Налоговая накладная входящая</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="afca96d4-9e11-4e86-8f97-634c03f30175">
+				<Properties>
+					<Name>ТоварныйЧек</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее (товарный чек и т. п.)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інше (товарний чек і т.п.)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Товарный чек или другой расчетный документ от резидента </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="69201d39-45a9-4b11-8d69-b68f4de5a23d">
+				<Properties>
+					<Name>РасчетКорректировкиВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчет корректировки (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Розрахунок коригування (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Расчет корректировки стоимости (входящий)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c40c5294-3018-4ec1-888e-516a91d57ae8">
+				<Properties>
+					<Name>РасчетКорректировкиКорректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчет корректировки (изменение суммы компенсации)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Розрахунок коригування (зміна суми компенсації)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Расчет корректировки стоимости (входящий)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c92e9342-ce5b-4533-9fcd-3f8e674d4e0b">
+				<Properties>
+					<Name>ИмпортПрочее</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Импорт не товаров</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Імпорт не товарів</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Импорт не товаров с оплатой НДС по ГТД</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dadbd328-feac-4adf-9e00-0f94b88a2f85">
+				<Properties>
+					<Name>ИмпортВексель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Импорт по векселю</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Імпорт за векселем</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Импорт товаров, на которые оформлен налоговый вексель</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b11dcd50-355c-4632-af21-87c68b1be30a">
+				<Properties>
+					<Name>BeксeльПpoшлoгoПepиoдa</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вeксeль, погашенный  в пpoшлoм пepиoде или досрочно</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вeксeль, погашений  в попередньому періоді або достроково</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Налоговый вексель, погашеный в прошлом периоде</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="28be145c-ab6a-4fc9-9062-57bdc6026847">
+				<Properties>
+					<Name>ПогашениеНалоговогоВекселя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Погашение налогового векселя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Погашення податкового векселя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Погашение налогового векселя</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f290947d-7698-4c15-8361-b165b282f224">
+				<Properties>
+					<Name>РаботыОтНерезидента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работы от нерезидента (только до 29/07/2005)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Роботи від нерезидента (тільки до 29/07/2005)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Работы, полученные от нерезидента (не используется после 29/07/2005)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="37048f48-32ab-482a-b3ab-c09646a4650e">
+				<Properties>
+					<Name>РаботыОтНерезидентаПрошлогоПериода</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работы от нерезидента прошлого периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Роботи від нерезидента минулого періоду</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Работы, полученнные от нерезидента в прошлом периоде</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2304825f-b5fa-41d2-a31e-f8f5cc80d50a">
+				<Properties>
+					<Name>ТаможенноеОформлениеТоваровКомитента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таможенное оформление товаров комитента (право на кредит)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Митне оформлення товарів комітента (право на кредит)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Регистрация ГТД оформленной при импорте комиссионных товаров. Право на кредит возникает при перечислении денег комитенту за реализованный товар</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ff32d808-9b26-4be8-a9e3-d89e4be184e0">
+				<Properties>
+					<Name>ИсправлениеОшибки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправление ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлення помилки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

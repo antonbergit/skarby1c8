@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="65500e35-5046-4940-83e2-45b4aa130317">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийПриложение2КНалоговойНакладной" category="Ref">
+				<xr:TypeId>7fb0c24f-dc0c-479b-a28d-1bc65d7f7743</xr:TypeId>
+				<xr:ValueId>3d523be9-63e8-49b5-a4e9-b55b40c39444</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийПриложение2КНалоговойНакладной" category="Manager">
+				<xr:TypeId>2ee9b8ac-ef1b-4c85-a11e-a68be74c3cd7</xr:TypeId>
+				<xr:ValueId>df2f2e3f-9ece-4558-8644-936ce8bb8ea9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийПриложение2КНалоговойНакладной" category="List">
+				<xr:TypeId>7df0df58-b92f-4f84-8c92-fe9abf863c10</xr:TypeId>
+				<xr:ValueId>4ceec29f-c94d-4592-a78a-e3dd54c60d25</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыОперацийПриложение2КНалоговойНакладной</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды операций документа "Приложение 2 к налоговой накладной"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види операцій документа "Додаток 2 до податковій накладній"</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Общ)</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="de880cd7-620e-4f5b-a1eb-27574a388d5d">
+				<Properties>
+					<Name>ОблагаемыеОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, облагаемые НДС (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, оподатковувані ПДВ (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c956839d-2a2d-4422-8cc3-c2e3714d0d87">
+				<Properties>
+					<Name>ОблагаемыеОперацииКорректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, облагаемые НДС (корректировка)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, оподатковувані ПДВ (коригування)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="67fec4c4-2c04-4109-96d7-e8b461b5609d">
+				<Properties>
+					<Name>ОсвобожденныеОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, освобожденные от  НДС (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, звільнені від ПДВ (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Операции, освобожденные от НДС (п.5)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9d4103c5-e441-4b66-8cd4-ab9bd86490dc">
+				<Properties>
+					<Name>ОсвобожденныеОперацииКорректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, освобожденные от  НДС (корректировка)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, звільнені від ПДВ (коригування)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Операции, освобожденные от НДС (п.5)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="06d96e4a-31a8-4976-9b7b-128754859267">
+				<Properties>
+					<Name>НеНДСОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, не являющиеся объектом налогообложения (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, що не є об`єктом оподатковування (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Операции, не объекты налогообложения по НДС (п. 3.2)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a0b3be8b-d580-44c4-942c-f19a1de0e42d">
+				<Properties>
+					<Name>НеНДСОперацииКорректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции, не являющиеся объектом налогообложения (корректировка)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Операції, що не є об`єктом оподатковування (коригування)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Операции, не объекты налогообложения по НДС (п. 3.2)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6ccbe4ec-64ee-4cfd-acf2-6b72f2a0028b">
+				<Properties>
+					<Name>ИтоговаяРозницаОблагаемыеОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоговая в рознице по облагаемому НДС (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підсумкова в роздробі по оподатковуваному ПДВ (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3cb37de7-5c5f-49e4-8572-32053462cfeb">
+				<Properties>
+					<Name>ИтоговаяРозницаОсвобожденныеОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоговая в рознице по освобожденному НДС  (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підсумкова в роздробі по звільненому ПДВ  (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="293bf300-5855-4ce2-9aef-bc75a7f83dcb">
+				<Properties>
+					<Name>РозницаКонрагентуОблагаемыеОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возврат в розницу плательщику НДС по облагаемому НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Повернення в роздріб платникові ПДВ по оподатковуваному ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="32eb2a64-260d-4fe1-92d2-534e5417d877">
+				<Properties>
+					<Name>РозницаКонрагентуОсвобожденныеОперацииВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возврат в розницу плательщику НДС по освобожденному НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Повернення в роздріб платникові ПДВ по звільненому ПДВ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="899d18f3-9597-4f36-8299-a334c0c0466e">
+				<Properties>
+					<Name>РаботыОтНерезидентаКорректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работы от нерезидента корректировка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Роботи від нерезидента коригування</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Работы, полученные от нерезидента</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0d8773d3-592b-4845-bc1f-024239f8f7ed">
+				<Properties>
+					<Name>УсловнаяПродажаВозврат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условная продажа (возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Умовний продаж (повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1dfe7529-e6b5-47fa-9af4-d75d8840c160">
+				<Properties>
+					<Name>СводнаяНаПревышениеБазыНадЦенойПоставки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Превышение базы над ценой поставки (корректировка/возврат)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Перевищення бази над ціною поставки (коригування/повернення)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
