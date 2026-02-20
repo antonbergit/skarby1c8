@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ТекстДоступноОбновление" id="1">
+			<TextColor>style:FormTextColor</TextColor>
+			<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступно новое обновление</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Доступне нове оновлення</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстДоступноОбновлениеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТекстДоступноОбновлениеРасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<LabelDecoration name="ТекстНажмитеУстановить" id="4">
+			<TextColor>style:FormTextColor</TextColor>
+			<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нажмите кнопку "Установить" для начала автоматической установки новой версии</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Натисніть кнопку "Встановити" для початку автоматичної установки нової версії</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстНажмитеУстановитьКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТекстНажмитеУстановитьРасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<LabelDecoration name="ТекстПроверкаСертификата" id="9">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Во время установки проверяется подлинность загруженного файла обновления.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Під час установки перевіряється достовірність завантаженого файлу оновлення.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстПроверкаСертификатаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ТекстПроверкаСертификатаРасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<Button name="Установить" id="7">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<CommandName>Form.Command.Установить</CommandName>
+			<ExtendedTooltip name="УстановитьРасширеннаяПодсказка" id="8"/>
+		</Button>
+		<LabelField name="тСкачатьОбновлениеВручную" id="23">
+			<DataPath>СкачатьОбновлениеВручную</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="тСкачатьОбновлениеВручнуюКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="тСкачатьОбновлениеВручнуюРасширеннаяПодсказка" id="25"/>
+			<Events>
+				<Event name="URLProcessing">СкачатьОбновлениеВручнуюОбработкаНавигационнойСсылки</Event>
+				<Event name="Click">СкачатьОбновлениеВручнуюНажатие</Event>
+			</Events>
+		</LabelField>
+		<Button name="СкачатьОбновлениеВручную" id="29">
+			<Type>Hyperlink</Type>
+			<CommandName>Form.Command.КомандаСкачатьОбновлениеВручную</CommandName>
+			<ExtendedTooltip name="СкачатьОбновлениеВручнуюРасширеннаяПодсказка" id="30"/>
+		</Button>
+		<LabelDecoration name="ТекстПояснение" id="26">
+			<ContextMenu name="ТекстПояснениеКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ТекстПояснениеРасширеннаяПодсказка" id="28"/>
+		</LabelDecoration>
+		<LabelDecoration name="ТекстПодробнее" id="20">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробнее</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Детальніше</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="ТекстПодробнееКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ТекстПодробнееРасширеннаяПодсказка" id="22"/>
+			<Events>
+				<Event name="Click">ТекстПодробнееНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаКартиникиИнструкции" id="18">
+			<Visible>false</Visible>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаКартиникиИнструкцииРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаШаг1" id="12">
+					<Height>8</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаШаг1КонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КартинкаШаг1РасширеннаяПодсказка" id="14"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаШаг2" id="15">
+					<Height>8</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаШаг2КонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="КартинкаШаг2РасширеннаяПодсказка" id="17"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.МодульОбменаПриват24вБО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОбновлениеУспешно" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользуемоеИмяФайла" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СкачатьОбновлениеВручную" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать обновление самостоятельно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити оновлення самостійно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасширениеФайла" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Расширение файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>4</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекВерсия" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тек версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктуальнаяВерсияОбработки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Актуальная версия обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Путьmop24versions" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Путьmop24versions</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БазовоеИмяФайла" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Базовое имя файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткатУспешен" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Откат успешен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьИИмяСкачаннойОбработки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Путь и имя скачанной обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФайлОтката" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Файл отката</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Установить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать и установить новую версию модуля обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити та встановити нову версію модуля обміну</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Установить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСкачатьОбновлениеВручную" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать обновление вручную</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити оновлення вручну</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать обновление вручную</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити оновлення вручну</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкачатьОбновлениеВручнуюОбработкаНавигационнойСсылки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ИнтернетАдресДляСоединения">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="aefe0548-07c5-4c55-afd4-86452517f800">
+		<Name>ВодительскоеУдостоверение</Name>
+		<Code/>
+		<Description>Водительское удостоверение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38935b3b-2a87-49eb-8f9f-277057620145">
+		<Name>ВоенныйБилет</Name>
+		<Code/>
+		<Description>Военный билет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="717313c8-ed06-4c1f-899b-e87ad9d0df2b">
+		<Name>ДипломатическийПаспорт</Name>
+		<Code/>
+		<Description>Дипломатический паспорт гражданина Украины</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03c0b158-27a5-440a-8a74-705796b1adcf">
+		<Name>Загранпаспорт</Name>
+		<Code/>
+		<Description>Загранпаспорт гражданина Украины</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c123acf-1094-4de2-bcb6-017f1c6e7f9a">
+		<Name>Паспорт</Name>
+		<Code/>
+		<Description>Паспорт гражданина Украины</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5dcc0a00-1e6a-4ed1-b6b0-0035d496dd8a">
+		<Name>ПаспортМоряка</Name>
+		<Code/>
+		<Description>Паспорт моряка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1323fc31-3b7f-4bad-8578-2c6540569156">
+		<Name>СвидетельствоОРождении</Name>
+		<Code/>
+		<Description>Свидетельство о рождении</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="292e7cbd-34d1-4695-93d9-e55570d7ab62">
+		<Name>УдостоверениеОфицера</Name>
+		<Code/>
+		<Description>Удостоверение личности</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,3215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ВосстановитьПредопределенныйБланкПоУмолчанию" id="272">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВосстановитьПредопределенныйБланкПоУмолчанию</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Восстановить по умолчанию</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Відновити за замовчуванням</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ВосстановитьПредопределенныйБланкПоУмолчаниюРасширеннаяПодсказка" id="273"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НаименованиеКод" id="348">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование, код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Найменування, код</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НаименованиеКодРасширеннаяПодсказка" id="349"/>
+			<ChildItems>
+				<InputField name="Наименование" id="70">
+					<DataPath>Объект.Description</DataPath>
+					<DropListWidth>1</DropListWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="Код" id="345">
+					<DataPath>Объект.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="346"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="347"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияРазделитель1" id="350">
+			<Font ref="sys:DefaultGUIFont" height="1" kind="WindowsFont"/>
+			<ContextMenu name="ДекорацияРазделитель1КонтекстноеМеню" id="351"/>
+			<ExtendedTooltip name="ДекорацияРазделитель1РасширеннаяПодсказка" id="352"/>
+		</LabelDecoration>
+		<CommandBar name="ГруппаКоманднаяПанель" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група командна панель</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<Popup name="ГруппаДобавитьПараметр" id="175">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вставить параметр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вставити параметр</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вставить параметр в бланк договора</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вставить параметр в бланк договора</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДобавитьПараметрРасширеннаяПодсказка" id="176"/>
+					<ChildItems>
+						<Popup name="ГруппаПараметрыОрганизации" id="220">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Організація</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаПараметрыОрганизацииРасширеннаяПодсказка" id="221"/>
+							<ChildItems>
+								<Button name="ВставитьАдресЭлектроннойПочтыОрганизации" id="232">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьАдресЭлектроннойПочтыОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Email</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Email</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьАдресЭлектроннойПочтыОрганизацииРасширеннаяПодсказка" id="233"/>
+								</Button>
+								<Popup name="ГруппаБанковскиеРеквизитыОрганизации" id="353">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Банковские реквизиты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Банківські реквізити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаБанковскиеРеквизитыОрганизацииРасширеннаяПодсказка" id="354"/>
+									<ChildItems>
+										<Button name="ВставитьБанк" id="190">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьБанкОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Банк</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Банк</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьБанкРасширеннаяПодсказка" id="191"/>
+										</Button>
+										<Button name="ВставитьМфоОрганизации" id="355">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьМфоОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>МФО</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>МФО</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьМфоОрганизацииРасширеннаяПодсказка" id="356"/>
+										</Button>
+										<Button name="ВставитьКоррСчетОрганизации" id="357">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьКоррСчетОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Корреспондентский счёт</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Кореспондентський рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьКоррСчетОрганизацииРасширеннаяПодсказка" id="358"/>
+										</Button>
+										<Button name="ВставитьРасчетныйСчет" id="208">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьРасчетныйСчетОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчетный счет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Розрахунковий рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьРасчетныйСчетРасширеннаяПодсказка" id="209"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Popup name="ГруппаКодыОрганизации" id="248">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Коды</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Коди</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаКодыОрганизацииРасширеннаяПодсказка" id="249"/>
+									<ChildItems>
+										<Button name="ВставитьИНН" id="250">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьИННОргнанизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ИНН</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ІПН</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьИННРасширеннаяПодсказка" id="251"/>
+										</Button>
+										<Button name="ВставитьКОАТУУОрганизации" id="254">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьКОАТУУОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>КОАТУУ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>КОАТУУ</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьКОАТУУОрганизацииРасширеннаяПодсказка" id="255"/>
+										</Button>
+										<Button name="ВставитьКВЭДОрганизации" id="471">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьКВЭДОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>КВЭД</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>КВЭД</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьКВЭДОрганизацииРасширеннаяПодсказка" id="472"/>
+										</Button>
+										<Button name="ВставитьЕДРПОУОрганизации" id="256">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьЕДРПОУОрганизации</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЕГРПОУ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ЄДРПОУ</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьЕДРПОУОрганизацииРасширеннаяПодсказка" id="257"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Button name="ВставитьЛоготип" id="383">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьЛоготип</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Логотип</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Логотип</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьЛоготипРасширеннаяПодсказка" id="384"/>
+								</Button>
+								<Button name="ВставитьНазваниеОрганизации" id="202">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьНазваниеОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Название организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Назва організації</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьНазваниеОрганизацииРасширеннаяПодсказка" id="203"/>
+								</Button>
+								<Button name="ВставитьПочтовыйАдресОрганизации" id="234">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьПочтовыйАдресОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Почтовый адрес</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Поштова адреса</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьПочтовыйАдресОрганизацииРасширеннаяПодсказка" id="235"/>
+								</Button>
+								<Popup name="ГруппаРуководитель" id="449">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Руководитель</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Керівник</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаРуководительРасширеннаяПодсказка" id="450"/>
+									<ChildItems>
+										<Popup name="ГруппаСклоненияРуководительПолностью" id="393">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ФИО полностью</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ПІБ повністю</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаСклоненияРуководительПолностьюРасширеннаяПодсказка" id="394"/>
+											<ChildItems>
+												<Button name="ВставитьРуководителяОрганизацииИменительный" id="399">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииИменительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииИменительныйРасширеннаяПодсказка" id="400"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииРодительный" id="403">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииРодительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииРодительныйРасширеннаяПодсказка" id="404"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииДательный" id="397">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииДательный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииДательныйРасширеннаяПодсказка" id="398"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииВинительный" id="395">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииВинительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииВинительныйРасширеннаяПодсказка" id="396"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииТворительный" id="405">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииТворительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииТворительныйРасширеннаяПодсказка" id="406"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииПредложный" id="401">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииПредложный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииПредложныйРасширеннаяПодсказка" id="402"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+										<Popup name="ГруппаСклоненияРуководительИнициалы" id="435">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фамилия, инициалы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Прізвище, ініціали</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаСклоненияРуководительИнициалыРасширеннаяПодсказка" id="436"/>
+											<ChildItems>
+												<Button name="ВставитьРуководителяОрганизацииФИОИменительный" id="441">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииФИОИменительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииФИОИменительныйРасширеннаяПодсказка" id="442"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииФИОРодительный" id="445">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииФИОРодительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииФИОРодительныйРасширеннаяПодсказка" id="446"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииФИОДательный" id="439">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииФИОДательный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииФИОДательныйРасширеннаяПодсказка" id="440"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииФИОВинительный" id="437">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииФИОВинительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииФИОВинительныйРасширеннаяПодсказка" id="438"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииФИОТворительный" id="447">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииФИОТворительный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииФИОТворительныйРасширеннаяПодсказка" id="448"/>
+												</Button>
+												<Button name="ВставитьРуководителяОрганизацииФИОПредложный" id="443">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРуководителяОрганизацииФИОПредложный</CommandName>
+													<ExtendedTooltip name="ВставитьРуководителяОрганизацииФИОПредложныйРасширеннаяПодсказка" id="444"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</Popup>
+								<Button name="ВставитьТелефонОрганизации" id="228">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьТелефонОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Телефон</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Телефон</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьТелефонОрганизацииРасширеннаяПодсказка" id="229"/>
+								</Button>
+								<Button name="ВставитьФаксОрганизации" id="230">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьФаксОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Факс</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Факс</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьФаксОрганизацииРасширеннаяПодсказка" id="231"/>
+								</Button>
+								<Button name="ВставитьФаксимиле" id="379">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьФаксимиле</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Факсимиле</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Факсиміле</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьФаксимилеРасширеннаяПодсказка" id="380"/>
+								</Button>
+								<Button name="ВставитьФактическийАдресОрганизации" id="226">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьФактическийАдресОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фактический адрес</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Фактична адреса</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьФактическийАдресОрганизацииРасширеннаяПодсказка" id="227"/>
+								</Button>
+								<Button name="ВставитьАдресОрганизации" id="186">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьЮридическийАдресОрганизации</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Юридический адрес</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Юридична адреса</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьАдресОрганизацииРасширеннаяПодсказка" id="187"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Popup name="ГруппаПараметрыКонтрагента" id="222">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контрагент</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Контрагент</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаПараметрыКонтрагентаРасширеннаяПодсказка" id="223"/>
+							<ChildItems>
+								<Button name="ВставитьАдресЭлектроннойПочтыКонтрагента" id="244">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьАдресЭлектроннойПочтыКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Email</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Email</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьАдресЭлектроннойПочтыКонтрагентаРасширеннаяПодсказка" id="245"/>
+								</Button>
+								<Popup name="ГруппаБанковскиеРеквизитыКонтрагента" id="359">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Банковские реквизиты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Банківські реквізити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаБанковскиеРеквизитыКонтрагентаРасширеннаяПодсказка" id="360"/>
+									<ChildItems>
+										<Button name="ВставитьБанкКонтрагента" id="192">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьБанкКонтрагента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Банк контрагента</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Банк контрагента</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьБанкКонтрагентаРасширеннаяПодсказка" id="193"/>
+										</Button>
+										<Button name="ВставитьМфоКонтрагента" id="361">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьМфоКонтрагента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>МФО</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>МФО</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьМфоКонтрагентаРасширеннаяПодсказка" id="362"/>
+										</Button>
+										<Button name="ВставитьКоррСчетКонтрагента" id="363">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьКоррСчетКонтрагента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Корреспондентский счёт</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Кореспондентський рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьКоррСчетКонтрагентаРасширеннаяПодсказка" id="364"/>
+										</Button>
+										<Button name="ВставитьРасчетныйСчетКонтрагента" id="210">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьРасчетныйСчетКонтрагента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчетный счет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Розрахунковий рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьРасчетныйСчетКонтрагентаРасширеннаяПодсказка" id="211"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Popup name="ГруппаКодыКонтрагента" id="260">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Коды</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Коди</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаКодыКонтрагентаРасширеннаяПодсказка" id="261"/>
+									<ChildItems>
+										<Button name="ВставитьИННКонтрагента" id="266">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьИННКонтрагента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ИНН</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ІПН</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьИННКонтрагентаРасширеннаяПодсказка" id="267"/>
+										</Button>
+										<Button name="ВставитьЕДРПОУКонтрагента" id="262">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьЕДРПОУКонтрагента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЕГРПОУ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ЄДРПОУ</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьЕДРПОУКонтрагентаРасширеннаяПодсказка" id="263"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Popup name="ГруппаКонтактноеЛицоКонтрагента" id="451">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контактное лицо</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Контактна особа</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаКонтактноеЛицоКонтрагентаРасширеннаяПодсказка" id="452"/>
+									<ChildItems>
+										<Popup name="ГруппаДолжностьКонтактногоЛицаКонтрагента" id="407">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Должность</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Посада</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаДолжностьКонтактногоЛицаКонтрагентаРасширеннаяПодсказка" id="408"/>
+											<ChildItems>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаИменительный" id="413">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаИменительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаИменительныйРасширеннаяПодсказка" id="414"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаРодительный" id="417">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаРодительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаРодительныйРасширеннаяПодсказка" id="418"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаДательный" id="411">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаДательный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаДательныйРасширеннаяПодсказка" id="412"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаВинительный" id="409">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаВинительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаВинительныйРасширеннаяПодсказка" id="410"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаТворительный" id="419">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаТворительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаТворительныйРасширеннаяПодсказка" id="420"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаПредложный" id="415">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаПредложный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаПредложныйРасширеннаяПодсказка" id="416"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+										<Button name="ВставитьПаспортныеДанныеКонтактногоЛица" id="479">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьПаспортныеДанныеКонтактногоЛица</CommandName>
+											<ExtendedTooltip name="ВставитьПаспортныеДанныеКонтактногоЛицаРасширеннаяПодсказка" id="480"/>
+										</Button>
+										<Popup name="ГруппаКонтактноеЛицоКонтрагентаПолностью" id="421">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ФИО полностью</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ПІБ повністю</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаКонтактноеЛицоКонтрагентаПолностьюРасширеннаяПодсказка" id="422"/>
+											<ChildItems>
+												<Button name="ВставитьКонтактноеЛицоКонтрагентаИменительный" id="429">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКонтактноеЛицоКонтрагентаИменительный</CommandName>
+													<ExtendedTooltip name="ВставитьКонтактноеЛицоКонтрагентаИменительныйРасширеннаяПодсказка" id="430"/>
+												</Button>
+												<Button name="ВставитьКонтактноеЛицоКонтрагентаРодительный" id="425">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКонтактноеЛицоКонтрагентаРодительный</CommandName>
+													<ExtendedTooltip name="ВставитьКонтактноеЛицоКонтрагентаРодительныйРасширеннаяПодсказка" id="426"/>
+												</Button>
+												<Button name="ВставитьКонтактноеЛицоКонтрагентаДательный" id="431">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКонтактноеЛицоКонтрагентаДательный</CommandName>
+													<ExtendedTooltip name="ВставитьКонтактноеЛицоКонтрагентаДательныйРасширеннаяПодсказка" id="432"/>
+												</Button>
+												<Button name="ВставитьКонтактноеЛицоКонтрагентаВинительный" id="433">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКонтактноеЛицоКонтрагентаВинительный</CommandName>
+													<ExtendedTooltip name="ВставитьКонтактноеЛицоКонтрагентаВинительныйРасширеннаяПодсказка" id="434"/>
+												</Button>
+												<Button name="ВставитьКонтактноеЛицоКонтрагентаТворительный" id="423">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКонтактноеЛицоКонтрагентаТворительный</CommandName>
+													<ExtendedTooltip name="ВставитьКонтактноеЛицоКонтрагентаТворительныйРасширеннаяПодсказка" id="424"/>
+												</Button>
+												<Button name="ВставитьКонтактноеЛицоКонтрагентаПредложный" id="427">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКонтактноеЛицоКонтрагентаПредложный</CommandName>
+													<ExtendedTooltip name="ВставитьКонтактноеЛицоКонтрагентаПредложныйРасширеннаяПодсказка" id="428"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+										<Popup name="ГруппаКонтактноеЛицоКонтрагентаИнициалы" id="453">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фамилия, инициалы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Прізвище, ініціали</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаКонтактноеЛицоКонтрагентаИнициалыРасширеннаяПодсказка" id="454"/>
+											<ChildItems>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОИменительный" id="459">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОИменительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОИменительныйРасширеннаяПодсказка" id="460"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОРодительный" id="463">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОРодительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОРодительныйРасширеннаяПодсказка" id="464"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОДательный" id="457">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОДательный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОДательныйРасширеннаяПодсказка" id="458"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОВинительный" id="455">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОВинительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОВинительныйРасширеннаяПодсказка" id="456"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОТворительный" id="465">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОТворительный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОТворительныйРасширеннаяПодсказка" id="466"/>
+												</Button>
+												<Button name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОПредложный" id="461">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОПредложный</CommandName>
+													<ExtendedTooltip name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОПредложныйРасширеннаяПодсказка" id="462"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</Popup>
+								<Button name="ВставитьНазваниеОрганизацииКонтрагента" id="204">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьНазваниеОрганизацииКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Название организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Назва організації</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьНазваниеОрганизацииКонтрагентаРасширеннаяПодсказка" id="205"/>
+								</Button>
+								<Button name="ВставитьПаспортныеДанные" id="467">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьПаспортныеДанные</CommandName>
+									<ExtendedTooltip name="ВставитьПаспортныеДанныеРасширеннаяПодсказка" id="468"/>
+								</Button>
+								<Button name="ВставитьПочтовыйАдресКонтрагента" id="246">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьПочтовыйАдресКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Почтовый адрес</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Поштова адреса</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьПочтовыйАдресКонтрагентаРасширеннаяПодсказка" id="247"/>
+								</Button>
+								<Button name="ВставитьТелефонКонтрагента" id="240">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьТелефонКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Телефон</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Телефон</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьТелефонКонтрагентаРасширеннаяПодсказка" id="241"/>
+								</Button>
+								<Button name="ВставитьФаксКонтрагента" id="242">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьФаксКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Факс</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Факс</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьФаксКонтрагентаРасширеннаяПодсказка" id="243"/>
+								</Button>
+								<Button name="ВставитьФактическийАдресКонтрагента" id="238">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьФактическийАдресКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фактический адрес</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Фактична адреса</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьФактическийАдресКонтрагентаРасширеннаяПодсказка" id="239"/>
+								</Button>
+								<Button name="ВставитьЮридическийАдресКонтрагента" id="188">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьЮридическийАдресКонтрагента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Юридический адрес</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Юридична адреса</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьЮридическийАдресКонтрагентаРасширеннаяПодсказка" id="189"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Popup name="ГруппаПараметрыДоговора" id="236">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры договора</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Параметри договору</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаПараметрыДоговораРасширеннаяПодсказка" id="237"/>
+							<ChildItems>
+								<Button name="ВставитьДатуДоговора" id="194">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьДатуДоговора</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата договора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата договору</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьДатуДоговораРасширеннаяПодсказка" id="195"/>
+								</Button>
+								<Button name="ВставитьНомерДоговора" id="206">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьНомерДоговора</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер договора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Номер договору</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьНомерДоговораРасширеннаяПодсказка" id="207"/>
+								</Button>
+								<Button name="ВставитьСрокОплатыПокупателя" id="212">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьСрокОплатыПокупателя</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок оплаты покупателя</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Термін оплати покупця</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьСрокОплатыПокупателяРасширеннаяПодсказка" id="213"/>
+								</Button>
+								<Button name="ВставитьСрокОплатыПоставщику" id="214">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьСрокОплатыПоставщику</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок оплаты поставщику</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Термін оплати постачальникові</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьСрокОплатыПоставщикуРасширеннаяПодсказка" id="215"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Popup name="ГруппаПараметрыДокумента" id="343">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры документа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Параметри документа</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаПараметрыДокументаРасширеннаяПодсказка" id="344"/>
+							<ChildItems>
+								<Button name="ВставитьДатуДокумента" id="387">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьДатуДокумента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьДатуДокументаРасширеннаяПодсказка" id="388"/>
+								</Button>
+								<Button name="ВставитьНомерДокумента" id="385">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьНомерДокумента</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Номер</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВставитьНомерДокументаРасширеннаяПодсказка" id="386"/>
+								</Button>
+								<Popup name="ГруппаСуммаДокумента" id="473">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма документа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума документа</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаСуммаДокументаРасширеннаяПодсказка" id="474"/>
+									<ChildItems>
+										<Button name="ВставитьСуммуДокумента" id="270">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьСуммуДокумента</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Число</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Число</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьСуммуДокументаРасширеннаяПодсказка" id="271"/>
+										</Button>
+										<Button name="ВставитьСуммуДокументаПрописью" id="475">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьСуммуДокументаПрописью</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Прописью</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Прописом</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВставитьСуммуДокументаПрописьюРасширеннаяПодсказка" id="476"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Popup name="ГруппаДополнительныеРеквизитыЗаказаПокупателя" id="389">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заказ покупателя</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Замовлення покупця</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные реквизиты документа Заказа покупателя</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дополнительные реквизиты документа Заказа покупателя</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаДополнительныеРеквизитыЗаказаПокупателяРасширеннаяПодсказка" id="390"/>
+								</Popup>
+								<Popup name="ГруппаДополнительныеРеквизитыСчетаНаОплату" id="391">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Счет на оплату</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Рахунок на оплату</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные реквизиты документа Счет на оплату</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дополнительные реквизиты документа Счет на оплату</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаДополнительныеРеквизитыСчетаНаОплатуРасширеннаяПодсказка" id="392"/>
+								</Popup>
+							</ChildItems>
+						</Popup>
+						<Button name="ВставитьРедактируемыйПараметр" id="341">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ВставитьРедактируемыйПараметр</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заполняемое вручную поле</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Заповнюване вручну поле</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ВставитьРедактируемыйПараметрРасширеннаяПодсказка" id="342"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<ButtonGroup name="ГруппаСтандартныеКоманды" id="339">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа стандартные команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група стандартні команди</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стандартные команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стандартні команди</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтандартныеКомандыРасширеннаяПодсказка" id="340"/>
+					<ChildItems>
+						<Button name="ВставитьРазрывСтраницы" id="381">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ВставитьРазрывСтраницы</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разрыв страницы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Розрив сторінки</v8:content>
+								</v8:item>
+							</Title>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ВставитьРазрывСтраницыРасширеннаяПодсказка" id="382"/>
+						</Button>
+						<ButtonGroup name="Группа1" id="481">
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="482"/>
+							<ChildItems>
+								<Button name="Жирный" id="279">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Bold</CommandName>
+									<ExtendedTooltip name="ЖирныйРасширеннаяПодсказка" id="280"/>
+								</Button>
+								<Button name="Наклонный" id="281">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Italic</CommandName>
+									<ExtendedTooltip name="НаклонныйРасширеннаяПодсказка" id="282"/>
+								</Button>
+								<Button name="Подчеркивание" id="283">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Underline</CommandName>
+									<ExtendedTooltip name="ПодчеркиваниеРасширеннаяПодсказка" id="284"/>
+								</Button>
+								<Button name="Зачеркивание" id="285">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Strikeout</CommandName>
+									<ExtendedTooltip name="ЗачеркиваниеРасширеннаяПодсказка" id="286"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="Группа2" id="483">
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="484"/>
+							<ChildItems>
+								<Button name="УвеличитьОтступ" id="287">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.IncreaseIndent</CommandName>
+									<ExtendedTooltip name="УвеличитьОтступРасширеннаяПодсказка" id="288"/>
+								</Button>
+								<Button name="УменьшитьОтступ" id="289">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.DecreaseIndent</CommandName>
+									<ExtendedTooltip name="УменьшитьОтступРасширеннаяПодсказка" id="290"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="Группа3" id="485">
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="486"/>
+							<ChildItems>
+								<Button name="МаркированныйСписок" id="291">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.BulletedList</CommandName>
+									<ExtendedTooltip name="МаркированныйСписокРасширеннаяПодсказка" id="292"/>
+								</Button>
+								<Button name="НумерованныйСписок" id="293">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.NumberedList</CommandName>
+									<ExtendedTooltip name="НумерованныйСписокРасширеннаяПодсказка" id="294"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<Button name="Символ" id="299">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Char</CommandName>
+							<ExtendedTooltip name="СимволРасширеннаяПодсказка" id="300"/>
+						</Button>
+						<ButtonGroup name="Группа4" id="487">
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="488"/>
+							<ChildItems>
+								<Button name="ВыровнятьВлево" id="301">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.AlignLeft</CommandName>
+									<ExtendedTooltip name="ВыровнятьВлевоРасширеннаяПодсказка" id="302"/>
+								</Button>
+								<Button name="ВыровнятьПоЦентру" id="303">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.AlignCenter</CommandName>
+									<ExtendedTooltip name="ВыровнятьПоЦентруРасширеннаяПодсказка" id="304"/>
+								</Button>
+								<Button name="ВыровнятьВправо" id="305">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.AlignRight</CommandName>
+									<ExtendedTooltip name="ВыровнятьВправоРасширеннаяПодсказка" id="306"/>
+								</Button>
+								<Button name="ВыровнятьПоШирине" id="307">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.AlignJustify</CommandName>
+									<ExtendedTooltip name="ВыровнятьПоШиринеРасширеннаяПодсказка" id="308"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<Button name="Шрифт" id="311">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Font</CommandName>
+							<ExtendedTooltip name="ШрифтРасширеннаяПодсказка" id="312"/>
+						</Button>
+						<Button name="МеждустрочныйИнтервал" id="309">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.LineSpacing</CommandName>
+							<ExtendedTooltip name="МеждустрочныйИнтервалРасширеннаяПодсказка" id="310"/>
+						</Button>
+						<Button name="УвеличитьРазмерШрифта" id="313">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.IncreaseFontSize</CommandName>
+							<ExtendedTooltip name="УвеличитьРазмерШрифтаРасширеннаяПодсказка" id="314"/>
+						</Button>
+						<Button name="УменьшитьРазмерШрифта" id="315">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.DecreaseFontSize</CommandName>
+							<ExtendedTooltip name="УменьшитьРазмерШрифтаРасширеннаяПодсказка" id="316"/>
+						</Button>
+						<Button name="ЦветФона" id="317">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.BackColor</CommandName>
+							<ExtendedTooltip name="ЦветФонаРасширеннаяПодсказка" id="318"/>
+						</Button>
+						<Button name="ЦветТекста" id="319">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.TextColor</CommandName>
+							<ExtendedTooltip name="ЦветТекстаРасширеннаяПодсказка" id="320"/>
+						</Button>
+						<Button name="Отменить" id="321">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Undo</CommandName>
+							<ExtendedTooltip name="ОтменитьРасширеннаяПодсказка" id="322"/>
+						</Button>
+						<Button name="Вернуть" id="323">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Redo</CommandName>
+							<ExtendedTooltip name="ВернутьРасширеннаяПодсказка" id="324"/>
+						</Button>
+						<Button name="КопироватьВБуферОбмена" id="325">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.CopyToClipboard</CommandName>
+							<ExtendedTooltip name="КопироватьВБуферОбменаРасширеннаяПодсказка" id="326"/>
+						</Button>
+						<Button name="ВставитьИзБуфераОбмена" id="327">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.PasteFromClipboard</CommandName>
+							<ExtendedTooltip name="ВставитьИзБуфераОбменаРасширеннаяПодсказка" id="328"/>
+						</Button>
+						<Button name="ВырезатьВБуферОбмена" id="329">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.CutToClipboard</CommandName>
+							<ExtendedTooltip name="ВырезатьВБуферОбменаРасширеннаяПодсказка" id="330"/>
+						</Button>
+						<Button name="Печать" id="331">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Print</CommandName>
+							<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="332"/>
+						</Button>
+						<Button name="ПредварительныйПросмотр" id="333">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.Preview</CommandName>
+							<ExtendedTooltip name="ПредварительныйПросмотрРасширеннаяПодсказка" id="334"/>
+						</Button>
+						<Button name="ВыделитьВсе" id="335">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.SelectAll</CommandName>
+							<ExtendedTooltip name="ВыделитьВсеРасширеннаяПодсказка" id="336"/>
+						</Button>
+						<Button name="СохранитьКак" id="337">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ФорматированныйДокумент.StandardCommand.SaveAs</CommandName>
+							<ExtendedTooltip name="СохранитьКакРасширеннаяПодсказка" id="338"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
+		</CommandBar>
+		<FormattedDocumentField name="ФорматированныйДокумент" id="276">
+			<DataPath>ФорматированныйДокумент</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<TitleLocation>None</TitleLocation>
+			<Width>1</Width>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<ContextMenu name="ФорматированныйДокументКонтекстноеМеню" id="277"/>
+			<ExtendedTooltip name="ФорматированныйДокументРасширеннаяПодсказка" id="278"/>
+			<Events>
+				<Event name="OnChange">ФорматированныйДокументПриИзменении</Event>
+			</Events>
+		</FormattedDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.БланкиДоговоров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ФорматированныйДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форматированный документ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Форматований документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:fd="http://v8.1c.ru/8.2/data/formatted-document">fd:FormattedDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныеРеквизиты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Додаткові реквізити</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстБланкаПриОткрытии" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст бланка при открытии</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Текст бланка при відкритті</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныеРеквизитыТЗ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты ТЗ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Додаткові реквізити ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяКоманды" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім`я команди</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Реквизит" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реквізит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВставитьНомерДоговора" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номер договору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить номер договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити номер договору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьНомерДоговора</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьЮридическийАдресОрганизации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить юридический адрес организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити юридичну адресу організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить юридический адрес организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити юридичну адресу організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьЮридическийАдресОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьЮридическийАдресКонтрагента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить юридический адрес контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити юридичну адресу контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить юридический адрес контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити юридичну адресу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьЮридическийАдресКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьБанкОрганизации" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить банк организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити банк організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить банк организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити банк організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьБанкОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьБанкКонтрагента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить банк контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити банк контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить банк контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити банк контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьБанкКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДатуДоговора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить дату договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити дату договору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить дату договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити дату договору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДатуДоговора</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаИменительный" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Именительный падеж (кто?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Називний відмінок (хто?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента именительный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента називний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаИменительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьНазваниеОрганизации" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить название организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити назву організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить название организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити назву організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьНазваниеОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьНазваниеОрганизацииКонтрагента" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить название организации контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити назву організації контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить название организации контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити назву організації контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьНазваниеОрганизацииКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРасчетныйСчетОрганизации" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить расчетный счет организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити розрахунковий рахунок організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить расчетный счет организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити розрахунковий рахунок організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРасчетныйСчетОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРасчетныйСчетКонтрагента" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить расчетный счет контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити розрахунковий рахунок контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить расчетный счет контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити розрахунковий рахунок контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРасчетныйСчетКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьСрокОплатыПокупателя" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить срок оплаты покупателя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити строк оплати покупця</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить срок оплаты покупателя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити строк оплати покупця</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьСрокОплатыПокупателя</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьСрокОплатыПоставщику" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить срок оплаты поставщику</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити строк оплати постачальникові</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить срок оплаты поставщику</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити строк оплати постачальникові</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьСрокОплатыПоставщику</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьФактическийАдресОрганизации" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить фактический адрес организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити фактичну адресу організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить фактический адрес организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити фактичну адресу організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьФактическийАдресОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьТелефонОрганизации" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить телефон организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити телефон організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить телефон организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити телефон організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьТелефонОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьФаксОрганизации" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить факс организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити факс організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить факс организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити факс організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьФаксОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьАдресЭлектроннойПочтыОрганизации" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить адрес электронной почты организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити адресу електронної пошти організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить адрес электронной почты организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити адресу електронної пошти організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьАдресЭлектроннойПочтыОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьПочтовыйАдресОрганизации" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить почтовый адрес организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити поштову адресу організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить почтовый адрес организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити поштову адресу організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьПочтовыйАдресОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьФактическийАдресКонтрагента" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить фактический адрес контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити фактичну адресу контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить фактический адрес контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити фактичну адресу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьФактическийАдресКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьТелефонКонтрагента" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить телефон контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити телефон контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить телефон контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити телефон контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьТелефонКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьФаксКонтрагента" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить факс контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити факс контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить факс контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити факс контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьФаксКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьАдресЭлектроннойПочтыКонтрагента" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить адрес электронной почты контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити адресу електронної пошти контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить адрес электронной почты контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити адресу електронної пошти контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьАдресЭлектроннойПочтыКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьПочтовыйАдресКонтрагента" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить почтовый адрес контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити поштову адресу контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить почтовый адрес контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити поштову адресу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьПочтовыйАдресКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьИННОргнанизации" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ИННОргнанизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити ІПНОрганізації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ИННОргнанизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити ІПНОрганізації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьИННОргнанизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКОАТУУОрганизации" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить КОАТУУОрганизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить КОАТУУОрганизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить КОАТУУОрганизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить КОАТУУОрганизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКОАТУУОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьЕДРПОУОрганизации" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьЕДРПОУОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьИННКонтрагента" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ИННОргнанизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити ІПНОрганізації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ИННОргнанизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити ІПНОрганізації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьИННКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьЕДРПОУКонтрагента" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить ЕГРПОУ Контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьЕДРПОУКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКонтактноеЛицоКонтрагентаВинительный" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Винительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Знахідний відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить контактное лицо контрагента винительный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити контактну особу контрагента знахідний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКонтактноеЛицоКонтрагентаВинительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьСуммуДокумента" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить сумму документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити суму документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить сумму документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити суму документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьСуммуДокумента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВосстановитьПредопределенныйБланкПоУмолчанию" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить предопределенный бланк по умолчанию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відновити визначений бланк за замовчуванням</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить предопределенный бланк по умолчанию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відновити визначений бланк за замовчуванням</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВосстановитьПредопределенныйБланкПоУмолчанию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииИменительный" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Именительный падеж (кто?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Називний відмінок (хто?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации именительный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації називний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииИменительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРедактируемыйПараметр" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить редактируемый параметр</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити параметр, що редагується</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить редактируемый параметр</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити параметр, що редагується</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРедактируемыйПараметр</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьМфоОрганизации" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить мфо организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити мфо організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить мфо организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити мфо організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьМфоОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьМфоКонтрагента" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить мфо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити мфо контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить мфо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити мфо контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьМфоКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКоррСчетОрганизации" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить корр счет организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити кор рахунок організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить корр счет организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити кор рахунок організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКоррСчетОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКоррСчетКонтрагента" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить корр счет контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити кор рахунок контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить корр счет контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити кор рахунок контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКоррСчетКонтрагента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьФаксимиле" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить факсимиле</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити факсиміле</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить факсимиле</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити факсиміле</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьФаксимиле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРазрывСтраницы" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить разрыв страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити розрив сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить разрыв страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити розрив сторінки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРазрывСтраницы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьЛоготип" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить логотип</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити логотип</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить логотип</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити логотип</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьЛоготип</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьНомерДокумента" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить номер документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити номер документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить номер документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити номер документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьНомерДокумента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДатуДокумента" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить дату документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити дату документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить дату документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити дату документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДатуДокумента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииРодительный" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Родовий відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииРодительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииПредложный" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предложный падеж (о ком?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місцевий відмінок (про кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииПредложный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииТворительный" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Творительный падеж (кем?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Орудний відмінок (ким?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииТворительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииВинительный" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Винительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Знахідний відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииВинительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииДательный" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дательный падеж (кому?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Давальний відмінок (кому?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииДательный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаПредложный" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предложный падеж (о ком?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місцевий відмінок (про кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаПредложный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаТворительный" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Творительный падеж (кем?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Орудний відмінок (ким?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаТворительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаДательный" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дательный падеж (кому?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Давальний відмінок (кому?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаДательный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаВинительный" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Винительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Знахідний відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаВинительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаРодительный" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Родовий відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаРодительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКонтактноеЛицоКонтрагентаПредложный" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предложный падеж (о ком?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місцевий відмінок (про кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить контактное лицо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити контактну особу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКонтактноеЛицоКонтрагентаПредложный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКонтактноеЛицоКонтрагентаДательный" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дательный падеж (кому?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Давальний відмінок (кому?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить контактное лицо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити контактну особу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКонтактноеЛицоКонтрагентаДательный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКонтактноеЛицоКонтрагентаРодительный" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Родовий відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить контактное лицо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити контактну особу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКонтактноеЛицоКонтрагентаРодительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКонтактноеЛицоКонтрагентаИменительный" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Именительный падеж (кто?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Називний відмінок (хто?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить контактное лицо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити контактну особу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКонтактноеЛицоКонтрагентаИменительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКонтактноеЛицоКонтрагентаТворительный" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Творительный падеж (кем?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Орудний відмінок (ким?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить контактное лицо контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити контактну особу контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКонтактноеЛицоКонтрагентаТворительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииФИОВинительный" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Винительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Знахідний відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииФИОВинительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииФИОДательный" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дательный падеж (кому?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Давальний відмінок (кому?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииФИОДательный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииФИОИменительный" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Именительный падеж (кто?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Називний відмінок (хто?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации именительный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації називний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииФИОИменительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииФИОПредложный" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предложный падеж (о ком?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місцевий відмінок (про кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииФИОПредложный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииФИОРодительный" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Родовий відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииФИОРодительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьРуководителяОрганизацииФИОТворительный" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Творительный падеж (кем?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Орудний відмінок (ким?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить руководителя организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити керівника організації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьРуководителяОрганизацииФИОТворительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОВинительный" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Винительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Знахідний відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОВинительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОДательный" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дательный падеж (кому?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Давальний відмінок (кому?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОДательный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОИменительный" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Именительный падеж (кто?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Називний відмінок (хто?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента именительный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента називний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОИменительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОПредложный" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предложный падеж (о ком?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місцевий відмінок (про кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОПредложный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОТворительный" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Творительный падеж (кем?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Орудний відмінок (ким?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОТворительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОРодительный" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительный падеж (кого?)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Родовий відмінок (кого?)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить должность контактного лица контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити посаду контактної особи контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьДолжностьКонтактногоЛицаКонтрагентаФИОРодительный</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьПаспортныеДанные" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Паспортные данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Паспортні дані</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить паспортные данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити паспортні дані</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьПаспортныеДанные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКВЭДОрганизации" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить КВЭДОрганизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить КВЭДОрганизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить КВЭДОрганизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить КВЭДОрганизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьКВЭДОрганизации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьСуммуДокументаПрописью" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить сумму документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити суму документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить сумму документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставити суму документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьСуммуДокументаПрописью</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьПаспортныеДанныеКонтактногоЛица" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Паспортные данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Паспортні дані</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить паспортные данные контактного лица</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вставить паспортные данные контактного лица</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьПаспортныеДанныеКонтактногоЛица</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

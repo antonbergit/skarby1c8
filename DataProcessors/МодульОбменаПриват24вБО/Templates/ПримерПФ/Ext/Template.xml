@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>uk</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>uk</id>
+			<code>Украинский</code>
+			<description>Украинский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>13</size>
+	</columns>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<c>
+				<i>4</i>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЕСТОВЫЙ ПРИМЕР</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<indexTo>12</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пример печатной формы документа для настройки размещения QR-кода</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<c>
+				<i>4</i>
+				<c>
+					<f>3</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>29</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>30</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>31</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для настройки заполните параметры "Верх" и "Лево" в окне данной формы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>32</index>
+		<row>
+			<c>
+				<i>10</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>34</index>
+		<row>
+			<c>
+				<i>11</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>35</index>
+		<row>
+			<c>
+				<i>9</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>37</index>
+		<row>
+			<c>
+				<i>11</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>41</index>
+		<row>
+			<c>
+				<i>11</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>2</id>
+		<formatIndex>6</formatIndex>
+		<beginRow>40</beginRow>
+		<beginRowOffset>42</beginRowOffset>
+		<endRow>42</endRow>
+		<endRowOffset>36</endRowOffset>
+		<beginColumn>4</beginColumn>
+		<beginColumnOffset>171</beginColumnOffset>
+		<endColumn>7</endColumn>
+		<endColumnOffset>102</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>Stretch</pictureSize>
+		<zOrder>0</zOrder>
+		<pictureIndex>1</pictureIndex>
+	</drawing>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>5</id>
+		<formatIndex>0</formatIndex>
+		<beginRow>0</beginRow>
+		<beginRowOffset>6</beginRowOffset>
+		<endRow>4</endRow>
+		<endRowOffset>27</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>3</beginColumnOffset>
+		<endColumn>1</endColumn>
+		<endColumnOffset>12</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>Proportionally</pictureSize>
+		<zOrder>0</zOrder>
+		<pictureIndex>2</pictureIndex>
+	</drawing>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>7</defaultFormatIndex>
+	<height>44</height>
+	<vgRows>44</vgRows>
+	<merge>
+		<r>4</r>
+		<c>4</c>
+		<w>3</w>
+	</merge>
+	<merge>
+		<r>20</r>
+		<c>4</c>
+		<w>3</w>
+	</merge>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentDrawingLineType">None</v8ui:style>
+	</line>
+	<font faceName="Arial" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<font>0</font>
+		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<font>1</font>
+		<width>72</width>
+	</format>
+	<format>
+		<font>2</font>
+		<borderColor>style:BorderColor</borderColor>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<textColor>style:FormTextColor</textColor>
+		<hyperLink>true</hyperLink>
+	</format>
+	<format>
+		<font>1</font>
+	</format>
+	<format>
+		<textColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:MediumSeaGreen</textColor>
+	</format>
+	<format>
+		<drawingBorder>0</drawingBorder>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+	<picture>
+		<index>0</index>
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAAKYAAAAcCAYAAADr2cRkAAAACXBIWXMAAAsTAAAL
+EwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5Jf
+xUYAAAQxSURBVHja7FtBctpAEGynuEc/QD+wXH5ApBcYH3MCbr4ZvwD7BTa33MAn
+H41fwPKAFMoLgl8Q5QXOZTYZj0fSSgihUNtVKlPIQkNP70zvACdXT+dv2C8SAAYe
+HhXwyVPg4YXp4eGF6eGF6eHRMHo5z5/UfL03T6nHPitmDCDw9Hh0TZgrAL8A/ARw
+DyDyVHl0yWOGACYANiRWL1CPg3rMvPa+AXAH4Lbm/XapvjcAUp+ynbhMicejEqbF
+FEAfwLjGtREJvA68522Oy/9CmEYRQNlKHAF43aFyeniUCjMpaN1DEmFe5TTY7XNw
+A2CtPN8vuK9HNS45tsfgMa3oZgDmOVV0uqMw1zlVNy4Q5kp4pjXFwePLACzJT2U5
+nkx61hEtRItHAAtxvyLv9iK4CGjjeJHD3ZLusazhF9MKXJbZI/u+oxwNWB40jjTP
+KvlKSriP6DzHrPft63cX4h+vns6hBB/TYVpcTLHwWZMCwgdETKp4skCZQMQi0XD0
+cTHFYTeGgcMUY0DHQ0N+sV/wGiaHo7IYbX5PSUyhQ5yxgx8O2PMrkYsFgGXPkZA1
+bXY2yrkhDve1toAq4h2JL6TVF7DzcwBnDd7zjv6e4uMHEUMS5kQkPKXrMrpmys5N
+KOm8DX8ReZFteisql61mRfZnyXiy/18lxtkecjcX/P2d+FTZlaek5pGy8sc4HC7F
+wkjFAorQ7Pz1Vrz3Z2EhAOCziGnM/J0hUYUiZiPuEZe06WHFuG2FviSR9sU9eXs1
+yuIIGxalrNZjZhkqj4teFGEGFPQhjPVWqdY2ybFISlNYCdFr1fRGmXLYo99wkjkX
+W6WFSstyz/y3jHHAYnTppJGjB5eQlfKdKOsIc1mwGtMDCbNt5CXsgS0Su/EZ7kmE
+6j5Aqaq2XQ5E5YuIu11jDGp640DkcFllV17U0iNlFR7KY7aNuxwvOKHHidKmLPmv
+xN8U7QzHMwA/lI4RFMT4mxaYS4xbWhByUuNSUEK2UFbEW7aLMLMOjbtse0wLdtfc
+MxWJul/DY4L8bCSmBDLhZ4w3rco0Ufm19hsCuC7gjedUxhg5Cuy2hjBv8H7EF0lx
+HsMXhZ9ZRZCbEe5DM4XAiLXdUQVh2mPukEAuxEGOJ2tCmCN6bX7MlQVoFNsVUGwB
+i3Gf3SjDvzEetNFR7wiEGSpi5ARc0uOZaGkR9PFXGaYlhC+oSvGR1bND5W/DoxvG
+RybEN6ejLdjcbPBxrpm0LczUsVJkym47K/B818oKtztPPqYZ4/2c02JBXuxCic1U
+eG8zui4hMYY5wn0V94oFN3LasHXgsiy2tdhkJDkVP6P/W4uR1AVxZEpiMA6xZux9
+JcoeZeT8Ewr65KcLkD/fOFFGI2mJF45LiGyymocsGSm6h07GeAytvE4FMS3FtEX3
+vzjRyRj9ryQ9Ooleh1p016qdxwHxZwCfsx/EmxRDAAAAAABJRU5ErkJggg==</picture>
+	</picture>
+	<picture>
+		<index>1</index>
+		<picture t="false">Qk1mCQAAAAAAADYAAAAoAAAAHAAAABwAAAABABgAAAAAADAJAADEDgAAxA4AAAAA
+AAAAAAAA////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////MzMzNjY2
+NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Ojs7////////////VJ94IJdZIZtbIZtb
+IZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbHYlRMzMzNjY2NjY2NjY2NjY2NjY2
+NjY2NjY2NjY2NjY2Ojs7////////////VJ94IJdZIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbIZtbIZtbIZtbIZtbHYlRMzMzNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2
+Ojs7////////////VKB5IJdZIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbHYlRMzMzNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Ojs7////////////
+VaN6IJhZIZtbIZtbIZtbIZpaIJdZIJdZIZpaIZtbIZtbIZtbIZtbHYlRMzMzNjY2
+NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Ojs7////////////SJ5xIZpbIZtbIZtb
+IZtbH5RXHYdPHYdPIJRXIZtbIZtbIZtbIZtbHYlRMzMzNjY2NjY2NjY2NjY2NjY2
+NjY2NjY2NjY2NjY2Ojs7////////////Ho1TIZtbIZtbIZtbIZlaHYlRUZJxUpRx
+HoxSIZtbIZtbIZtbIZtbHYlRMzMzNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2
+Ojs7////////1OXcH5JWIZtbIZtbIZtbIJZYKYhW////////HYlRIZtbIZtbIZtb
+IZtbHYlRMzMzNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Ojs7////////m8mx
+IJdZIZtbIZtbIZtbH5JWU5p1////////HYlRIZtbIZtbIZtbIZtbHYlRMzMzNjY2
+NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Ojs7////////O55qIZpbIZtbIZtbIZpb
+HotSiraf////////HYlRIZtbIZtbIZtbIZtbHYlRLi4uMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwMDAwLy8vNzc3////nMuyIJhZIZtbIZtbIZtbIJdZG4FM0+La////////
+HYlRIZtbIZtbIZtbIZtbHYlRIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+JSon1OneLp1iIZtbIZtbIZtbIZpaHo5TQ4xm////////////HYlRIZtbIZtbIZtb
+IZtbHYlR////////////////////////////////////////x+LULp5jIZtbIZtb
+IZtbIZtbIJRXG39Lp8S1////////////HYlRIZtbIZtbIZtbIZtbHYlR////////
+////////////////////////4/Dpc7yWIZlaIZtbIZtbIZtbIZtbIJdZHYhQUZFw
+////////////////HYlRIZtbIZtbIZtbIZtbHYlRxt/Sx+PUx+PUx+PUx+PUq9W/
+gcOhSqt4IZpbIZtbIZtbIZtbIZtbIZtbIJhZHotSJntO0+HZ////////////////
+HYlRIZtbIZtbIZtbIZtbHYlRHYlRIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbIZtbIZpbIJZYHYlRGXNEp8O0////////////////////HYlRIZtbIZtbIZtb
+IZtbHYlRHYlRIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIJhZH5FVHINN
+GG9Bp8K0////////////////////////HYlRIZtbIZtbIZtbIZtbHYlRHYlRIZtb
+IZtbIZtbIZtbIZtbIZtbIZtbIZpaIJZYH49UHIZPGXdGM3pV0+DZ////////////
+////////////////HYlRIZtbIZtbIZtbIZtbHYlRHYlRIZtbIZtbIZtbIZtbIJhZ
+H5JWHo1THYhQG35KGHNDJXFJia6b8PTy////////////////////////////////
+HYlRIZtbIZtbIZtbIZtbHYlRHYlRIZtbIZtbIZtbIZtbH5FVGnxJF21AFmc8XpJ2
+psGz8PTy////////////////////////////////////////HYlRIZtbIZtbIZtb
+IZtbHYlRHYlRIZtbIZtbIZtbIZtbHo5UqMu5xNjO////////////////////////
+////////////////////////////////HoxSIZtbIZtbIZtbIZtbHYlRHYlRIZtb
+IZtbIZtbIZtbIJRX////////////////////////////////////////////////
+////////////////IJRXIZtbIZtbIZtbIZtbHYlRHYlRIZtbIZtbIZtbIZtbIZpa
+WLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGDWLGD
+IZpaIZtbIZtbIZtbIZtbHYlRHYlRIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbHYlRHYlRIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbHYlRHYlRIZtb
+IZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtb
+IZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbIZtbHYlRG39LHo5THo5THo5THo5THo5T
+Ho5THo5THo5THo5THo5THo5THo5THo5THo5THo5THo5THo5THo5THo5THo5THo5T
+Ho5THo5THo5THo5THo5TG39LFmg9GG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9B
+GG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9BGG9B
+GG9BFmg9</picture>
+	</picture>
+</document>

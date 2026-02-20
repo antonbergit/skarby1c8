@@ -1,0 +1,3 @@
+﻿<Items Description="Производственные календари" Columns="Code,Description">
+	<Item Code="УА" Description="Украина"/>
+</Items>

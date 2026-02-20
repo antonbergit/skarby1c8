@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка обмена с Google</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Налаштування обміну з Google</v8:content>
+		</v8:item>
+	</Title>
+	<Width>84</Width>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Контакты" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контакты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Контакти</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ЦветЗаголовкаГруппыНастроек</TitleTextColor>
+			<Width>82</Width>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="КонтактыРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВключитьЗагрузкуКонтактов" id="39">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВключитьЗагрузкуКонтактовРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьЗагрузкуКонтактов" id="5">
+							<DataPath>ВключитьЗагрузкуКонтактов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создание новых контрагентов и заполнение их контактной информации по данным адресной книги Google. Функция доступна во всех формах документов, где есть поле для указания контрагента.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Створення нових контрагентів і заповнення їх контактної інформації з даних адресної книги Google. Функція доступна у всіх формах документів, де є поле для вказівки контрагента.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьЗагрузкуКонтактовКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ВключитьЗагрузкуКонтактовРасширеннаяПодсказка" id="7"/>
+							<Events>
+								<Event name="OnChange">ВключитьЗагрузкуКонтактовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЗагрузитьКонтакты" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузить контакты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група завантажити контакти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запускает фоновое задание загрузки контактов
+из адресной книги Google</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запускає фонове завдання завантаження контактів
+з адресної книги Google</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗагрузитьКонтактыРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<Button name="ЗагрузитьКонтакты" id="1">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЗагрузитьКонтакты</CommandName>
+							<ExtendedTooltip name="ЗагрузитьКонтактыРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<LabelField name="НадписьКонтактыЗагружены" id="25">
+							<DataPath>НадписьКонтактыЗагружены</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<TextColor>style:BorderColor</TextColor>
+							<ContextMenu name="НадписьКонтактыЗагруженыКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="НадписьКонтактыЗагруженыРасширеннаяПодсказка" id="27"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Календарь" id="13">
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСобытийИЗаданий">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Календар</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ЦветЗаголовкаГруппыНастроек</TitleTextColor>
+			<Width>82</Width>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="КалендарьРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВключитьСинхронизациюКалендаря" id="41">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВключитьСинхронизациюКалендаряРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьСинхронизациюКалендаря" id="8">
+							<DataPath>ВключитьСинхронизациюКалендаря</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При включении синхронизации события типа «Личная встреча», «Телефонный звонок» и «Прочее», созданные в календаре сотрудника, передаются в календарь Google. И наоборот, все события, созданные в Google, отражаются в календаре сотрудника.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>При включенні синхронізації події типу «Особиста зустріч», «Телефонний дзвінок» і «Інше», створені в календарі співробітника, передаються в календар Google. І навпаки, усі події, створені в Google, відбиваються в календарі співробітника.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьСинхронизациюКалендаряКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ВключитьСинхронизациюКалендаряРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="OnChange">ВключитьСинхронизациюКалендарейСGoogleПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСинхронизироватьКалендарь" id="20">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запускает фоновое задание синхронизации событий
+в календаре сотрудника с Google</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запускає фонове завдання синхронізації подій
+у календарі співробітника з Google</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСинхронизироватьКалендарьРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<Button name="СинхронизироватьКалендарь" id="3">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.СинхронизироватьКалендарь</CommandName>
+							<ExtendedTooltip name="СинхронизироватьКалендарьРасширеннаяПодсказка" id="4"/>
+						</Button>
+						<LabelField name="НадписьКалендарьСинхронизирован" id="28">
+							<DataPath>НадписьКалендарьСинхронизирован</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<TextColor>style:BorderColor</TextColor>
+							<ContextMenu name="НадписьКалендарьСинхронизированКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="НадписьКалендарьСинхронизированРасширеннаяПодсказка" id="30"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастройкиИдентификации" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификация приложения Google</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ідентифікація додатка Google</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ЦветЗаголовкаГруппыНастроек</TitleTextColor>
+			<Width>82</Width>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="НастройкиИдентификацииРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИдентификация" id="43">
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИдентификацияРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<PictureDecoration name="Пиктограмма" id="45">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пиктограмма</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Піктограма</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ПиктограммаКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ПиктограммаРасширеннаяПодсказка" id="47"/>
+						</PictureDecoration>
+						<LabelDecoration name="ИдентификацияПояснение" id="36">
+							<Height>2</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вставьте в &lt;link ИдентификацияПриложенияGoogle&gt;это поле&lt;/&gt; данные для идентификации в формате JSON, полученные из &lt;link https://console.developers.google.com/project&gt;https://console.developers.google.com/project&lt;/&gt; для вашего проекта</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вставте в &lt;link ИдентификацияПриложенияGoogle&gt;це поле&lt;/&gt; дані для ідентифікації у форматі JSON, отримані з &lt;link https://console.developers.google.com/project&gt;https://console.developers.google.com/project&lt;/&gt; для вашого проекту</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИдентификацияПояснениеКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ИдентификацияПояснениеРасширеннаяПодсказка" id="38"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияПояснениеОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбменСGoogle</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВключитьЗагрузкуКонтактов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить загрузку контактов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкнути завантаження контактів</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьСинхронизациюКалендаря" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить синхронизацию календаря</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкнути синхронізацію календаря</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НадписьКонтактыЗагружены" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись контакты загружены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Напис контакти завантажені</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НадписьКалендарьСинхронизирован" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись календарь синхронизирован</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Напис календар синхронізований</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СинхронизироватьКалендарь" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать календарь</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Синхронізувати календар</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать календарь</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Синхронізувати календар</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СинхронизироватьКалендарь</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьКонтакты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить контакты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити контакти</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить контакты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити контакти</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьКонтакты</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

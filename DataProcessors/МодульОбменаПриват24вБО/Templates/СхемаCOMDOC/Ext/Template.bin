@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="COMDOC" targetNamespace="COMDOC" elementFormDefault="qualified">
+	<xs:element name="ЕлектроннийДокумент">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Заголовок"/>
+				<xs:element ref="Сторони" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="Параметри" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Текст" type="xs:string" minOccurs="0"/>
+				<xs:element ref="Таблиця" minOccurs="0"/>
+				<xs:element ref="ВсьогоПоДокументу" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Заголовок">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="НомерДокументу" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ТипДокументу" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="КодТипуДокументу" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ДатаДокументу" type="xs:date" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="ТермінДії" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="НомерЗамовлення" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ДатаЗамовлення" type="xs:date" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="НомерДоговоруПоставки" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ДатаДоговоруПоставки" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="МісцеСкладання" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="Коментар" minOccurs="0" maxOccurs="10"/>
+				<xs:element ref="ДокПідстава" minOccurs="0" maxOccurs="10"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ТермінДії">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Початок" type="xs:date" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="Кінець" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Початок" type="xs:date"/>
+	<xs:element name="Кінець" type="xs:date"/>
+	<xs:element name="НомерЗамовлення" type="xs:string"/>
+	<xs:element name="ДатаЗамовлення" type="xs:date"/>
+	<xs:element name="МісцеСкладання" type="xs:string"/>
+	<xs:element name="Коментар">
+		<xs:complexType mixed="true">
+			<xs:attribute name="ІД" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ДокПідстава">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="НомерДокументу" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ТипДокументу" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="КодТипуДокументу" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ДатаДокументу" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Сторони">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Контрагент" minOccurs="2" maxOccurs="10"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Контрагент">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="СтатусКонтрагента" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ВидОсоби" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="НазваКонтрагента" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="КодКонтрагента" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ІПН" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="СвідоцтвоПДВ" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="МФО" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ПоточРах" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Телефон" type="xs:string" minOccurs="0"/>
+				<xs:element name="GUID" type="xs:string" minOccurs="0"/>
+				<xs:element name="GLN" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="ЮрАдреса" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="ФактАдреса" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="ПоштАдреса" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="СтатусКонтрагента" type="xs:string"/>
+	<xs:element name="ВидОсоби" type="xs:string"/>
+	<xs:element name="НазваКонтрагента" type="xs:string"/>
+	<xs:element name="КодКонтрагента" type="xs:integer"/>
+	<xs:element name="ІПН" type="xs:string"/>
+	<xs:element name="СвідоцтвоПДВ" type="xs:integer"/>
+	<xs:element name="МФО" type="xs:integer"/>
+	<xs:element name="ПоточРах" type="xs:integer"/>
+	<xs:element name="Телефон" type="xs:string"/>
+	<xs:element name="GUID" type="xs:string"/>
+	<xs:element name="GLN" type="xs:integer"/>
+	<xs:element name="ЮрАдреса">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Індекс" type="xs:integer"/>
+				<xs:element name="Область" type="xs:string" minOccurs="0"/>
+				<xs:element name="Місто" type="xs:string"/>
+				<xs:element name="Вулиця" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ФактАдреса">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Індекс" type="xs:integer"/>
+				<xs:element name="Область" type="xs:string" minOccurs="0"/>
+				<xs:element name="Місто" type="xs:string"/>
+				<xs:element name="Вулиця" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ПоштАдреса">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Індекс" type="xs:integer"/>
+				<xs:element name="Область" type="xs:string" minOccurs="0"/>
+				<xs:element name="Місто" type="xs:string"/>
+				<xs:element name="Вулиця" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Параметри">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Параметр" minOccurs="1" maxOccurs="99"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Параметр">
+		<xs:complexType mixed="true">
+			<xs:attribute name="ІД" type="xs:integer" use="required"/>
+			<xs:attribute name="назва" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Таблиця">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Рядок" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Рядок">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="НомПоз" type="xs:integer"/>
+				<xs:element ref="Штрихкод" minOccurs="0" maxOccurs="99"/>
+				<xs:element name="АртикулПокупця" type="xs:string" minOccurs="0"/>
+				<xs:element name="АртикулПродавця" type="xs:string" minOccurs="0"/>
+				<xs:element name="КодУКТЗЕД" type="xs:integer" minOccurs="0"/>
+				<xs:element name="Найменування" type="xs:string"/>
+				<xs:element name="ЗаявленаКількість" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="КількістьПоНакладній" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ПрийнятаКількість" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ПоставляємаКількість" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ОдиницяВиміру" type="xs:string" minOccurs="0"/>
+				<xs:element name="БазоваЦіна" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ПДВ" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="Ціна" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ЦінаФакт" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ЦінаПостачальника" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ЦінаПоДокументу" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="СумаНакладна" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="СумаПрийнято" type="xs:decimal" minOccurs="0"/>
+				<xs:element ref="ВсьогоПоРядку" minOccurs="0"/>
+				<xs:element ref="Надлишки" minOccurs="0"/>
+				<xs:element ref="Нестачі" minOccurs="0"/>
+				<xs:element ref="Причина" minOccurs="0"/>
+				<xs:element ref="РозходженняПоРядку" minOccurs="0"/>
+				<xs:element ref="ДоПовернення" minOccurs="0"/>
+				<xs:element ref="Взаєморозрахунки" minOccurs="0"/>
+				<xs:element name="Текст" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="ІД" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="НомПоз" type="xs:integer"/>
+	<xs:element name="Штрихкод">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="ІД" type="xs:integer" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="АртикулПокупця" type="xs:string"/>
+	<xs:element name="АртикулПродавця" type="xs:string"/>
+	<xs:element name="КодУКТЗЕД" type="xs:integer"/>
+	<xs:element name="Найменування" type="xs:string"/>
+	<xs:element name="ЗаявленаКількість" type="xs:decimal"/>
+	<xs:element name="ПрийнятаКількість" type="xs:decimal"/>
+	<xs:element name="БазоваЦіна" type="xs:decimal"/>
+	<xs:element name="Ціна" type="xs:decimal"/>
+	<xs:element name="ВсьогоПоРядку">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="СумаБезПДВ" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="СумаПДВ" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="Сума" type="xs:decimal" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="СумаПДВ" type="xs:decimal"/>
+	<xs:element name="Надлишки">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Кількісні" type="xs:decimal"/>
+				<xs:element name="Цінові" type="xs:decimal"/>
+				<xs:element ref="ПДВ" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Нестачі">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Кількісні" type="xs:decimal"/>
+				<xs:element name="Цінові" type="xs:decimal"/>
+				<xs:element ref="ПДВ" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ДоПовернення">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Кількість" type="xs:decimal"/>
+				<xs:element name="ОдиницяВиміру" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="ПричинаПовернення" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Взаєморозрахунки">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ДатаОперації" type="xs:date"/>
+				<xs:element name="Дебет" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Кредит" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ВсьогоПоДокументу">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="СумаБезПДВ" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ПДВ" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Сума" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ВсьогоНадлишків" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ВсьогоНестач" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="Дебет" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="Кредит" type="xs:decimal" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="НомерДокументу" type="xs:string"/>
+	<xs:element name="ТипДокументу" type="xs:string"/>
+	<xs:element name="КодТипуДокументу" type="xs:integer"/>
+	<xs:element name="ДатаДокументу" type="xs:date"/>
+	<xs:element name="Індекс" type="xs:integer"/>
+	<xs:element name="Область" type="xs:string"/>
+	<xs:element name="Місто" type="xs:string"/>
+	<xs:element name="Вулиця" type="xs:string"/>
+	<xs:element name="Текст" type="xs:string"/>
+	<xs:element name="ОдиницяВиміру" type="xs:string"/>
+	<xs:element name="ПДВ" type="xs:decimal"/>
+	<xs:element name="СумаБезПДВ" type="xs:decimal"/>
+	<xs:element name="Сума" type="xs:decimal"/>
+	<xs:element name="Кількісні" type="xs:decimal"/>
+	<xs:element name="Цінові" type="xs:decimal"/>
+	<xs:element name="Причина">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Код" type="xs:integer"/>
+				<xs:element name="Опис" type="xs:string" minOccurs="0"/>
+				<xs:element name="Кількість" type="xs:decimal" minOccurs="1"/>
+				<xs:element name="ОдиницяВиміру" type="xs:string" minOccurs="1"/>
+				<xs:element name="НаСуму" type="xs:decimal" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Код" type="xs:integer"/>
+	<xs:element name="Опис" type="xs:string"/>
+	<xs:element name="НаСуму" type="xs:decimal"/>
+	<xs:element name="Кількість" type="xs:decimal"/>
+	<xs:element name="ПричинаПовернення">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Код" type="xs:string" minOccurs="0"/>
+				<xs:element name="Опис" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="РозходженняПоРядку">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Ціна" minOccurs="0"/>
+				<xs:element ref="Кількість" minOccurs="0"/>
+				<xs:element name="Сума" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ЦінаНеПрийнята" minOccurs="0"/>
+				<xs:element name="КількістьНеПрийнята" minOccurs="0"/>
+				<xs:element name="СумаНеПрийнята" type="xs:decimal" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ЦінаПостачальника" type="xs:decimal"/>
+</xs:schema>
